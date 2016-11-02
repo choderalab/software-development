@@ -1,12 +1,10 @@
 # Continuous Integration (CI)
 
-* What is CI? 
 Continuous integration (CI) is the process of methodical code merging and testing from multiple sources in an
 effort to ensure that all code on a project works well with each other. 
 CI in practice is typically an automated process which checks newly proposed code from a developer 
 against existing code to ensure the changes do not break what is already in place. 
 
-* Why do we need CI
 The need for CI comes from multiple developers working on the same complex software project. 
 Developers cannot reasonably maintain complex software with multiple, interdependent features 
 by hand. A developer **could** be responsible for ensuring that every new bit of code, feature, 
@@ -22,12 +20,12 @@ while also introducing good coding habits.
 Without going into specific CI options, we first consider what good general 
 rules a CI process should have:
 
-#. Entirely automated process
-#. Scheduled and Triggered actions
-#. Visible status to all developers
-#. Visible results to all developers
-#. Logged outputs
-#. Isolated build and testing environments
+1. Entirely automated process
+1. Scheduled and Triggered actions
+1. Visible status to all developers
+1. Visible results to all developers
+1. Logged outputs
+1. Isolated build and testing environments
 
 Let us cover each of these items in detail. 
 
