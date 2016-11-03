@@ -14,6 +14,8 @@ so would be a large waste of that developer's time and talent that could be bett
 spent on adding the new features or bug fixes. A better option would be to automate this 
 type of code checking in a way that minimizes both developer input, and developer time 
 while also introducing good coding habits. 
+
+We provide [several examples](#Examples-to-Help-Get-Started) if you want to try to get started right away.
  
 ## What should good CI look like?
 
@@ -144,3 +146,85 @@ Integration is avalable through the [GitHub Page](https://github.com/integration
 features. These features include testing and deployment on mobile platforms (Android 
 and iOS), they can automatically round up build artifacts (extra files 
 created during build), and automatic dependency resolution to name a few. 
+
+
+## Examples to Help Get Started
+
+Here we provide some references to existing, example CI files and 
+integration that you can copy to help you get started on your own CI.
+These are actual CI scripts that are used in production software.
+
+One thing to note is that beyond simply "Fetch Code", none of the CI 
+platforms in these examples **do** anything unless told to. In general, 
+these examples all fetch the code, and run some tests which, on fail, 
+generate an error that can cause the CI process to be considered a 
+failure (as expected behavior).
+
+CI is not limited to one language! 
+
+### Example: Travis CI Compiles and Tests Your Code:
+ 
+
+[YANK's Travis-ci file](https://github.com/choderalab/yank/blob/master/.travis.yml) 
+does several things:
+
+1. Pulls the code base down (automatic from Travis, for pull requests its automatically gets the proposed code)
+1. Installs a local copy of the code and all its dependencies
+1. Runs the package's tests
+    * If these tests fail, the CI process fails, which is the intended behavior
+1. Runs the identical process on three versions of Python 
+1. Envokes a script after success to do some user-defined action.
+ 
+This is a rather simple example one could do. The few Python functions 
+such as `conda` and `pip` are **not** a requirement of the CI platform, but 
+the project its applied to.
+
+
+Another similar example is the [Omnia MD Conda Builder](https://github.com/omnia-md/conda-recipes/blob/master/.travis.yml) 
+which tells Travis to create a [Docker](https://www.docker.com/) image, 
+run the image (which pulls and compiles the code). Its the same basic 
+process, but through a Docker image instead.
+
+
+### Example: AppVeyor build and install scripts.
+
+[MDTraj's AppVeyor file](https://github.com/mdtraj/mdtraj/blob/master/appveyor.yml) 
+is a very simple file to set up, which in turn invokes a project-specific 
+file to actually run the tests.
+
+This file is a good example of the "bare bones" type of scripts you need 
+to actually start CI. It simply sets up two architectures, installs 
+some basic Python needs, then runs a script specific to the repository. 
+AppVeyor (like many other CI's) is designed to read a failure in a 
+script as a failure in the whole CI process, so you don't have to worry 
+about witting script which pass a fail state explicitly to AppVeyor.
+
+
+
+## Tips for Getting Started with Your CI
+
+1. Start from a working build script from another repository
+    * Modify as needed.
+1. Start with a free option
+    * Many CI platforms, especially those with GitHub Integration are free for a small number of repositories
+    * Try different ones out, see what works for you and your code
+1. Start experimenting with CI and settings
+    * Don't be afraid to break something in the CI script, all the suggestions here are isolated environments that are spun up and shut down on demand
+    * **Disclaimer**: Scripts you write which actually push to or interact with a live server no mater where its run from will still work. Its up to your judgement if you want those as part of your CI platform.
+1. Start reading the docs for your CI platform
+    * The examples here don't even begin to scratch the surface of all the settings you could use.
+    * Remember that you don't necessarily need all these options to make a good CI environments
+1. Start writing tests for CI to run!
+    * CI alone cannot fully test your code, its up to you to write the tests CI will run to ensure everything works
+1. Start now!
+    * CI will save you, and anyone else working on your code so much time, you will wonder why you did not start sooner
+    * Given many CI options are free, how easy it is to set up with GitHub Integration, and how low-risk it is, there is no reason to not try CI at the very least!
+    
+    
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement? 
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
