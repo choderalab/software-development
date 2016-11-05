@@ -1,8 +1,8 @@
 # Python coding best practices
 
 You are writing code that you and other people will read and modify multiple times, so there are few things to keep in mind that will simplify your life:
-- **Keep it simple, clean and documented.** Your code is your best methods section! Write it so that your colleagues can understand it easily. Write it so that you will remember what you did in 6 months from now.
-- **Make it robust and extensible.** Writing robust code means you will spend less time debugging, or (even worse) analyzing results from an incorrect code. Writing extensible code means you will spend less time modifying your code.
+- **Keep it simple, clean and documented.** Your code is your best methods section! Write it so that your colleagues can understand it easily. Write the documentation so that you will remember what you did 6 months from now.
+- **Make it robust and extensible.** Writing robust code means you will spend less time debugging, or (even worse) analyzing results from an incorrect code. Writing extensible code means you will spend less time modifying it.
 
 This article tries to offer practical suggestions on how to achieve these two (sometimes clashing) goals.
 
@@ -60,15 +60,68 @@ my_long_string = ("can be divided over multiple "
 ```
 
 ## Document your code
-- Add docstrings to functions
-- Use one-line docstring for obvious functions
-- Example of multi-line docstring
-- Using specific formats allow you to use existing software (Sphinx) which parses python code and automatically generate documentation in many formats (e.g. HTML, PDF, LaTex). The main standard formats:
-	- reStructuredText (link): the most common
-	- Numpydoc (link): more readable but harder to comply to
-	- Google style (link): Numpydoc is based on this
-	- Epydoc (link): based on javadoc, discontinued (last release in 2008) but still found in old projects
-- Link to main documentation tutorial
+Docstrings are special strings used to document your code that are internally supported by Python. The general guidelines are defined by [PEP257](https://www.python.org/dev/peps/pep-0257/), but there are specific formats that can be parsed by **automatic documentation generators**, most commonly [Sphinx](http://www.sphinx-doc.org/en/1.4.8/):
+
+- [reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickstart.html): The most common format. Very flexible and natively supported by Sphinx.
+- [Numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt): Generally more readable, but harder to comply to. A plugin adds Numpydoc support to Sphinx.
+- Google style: The Numpydoc syntax is based on this.
+- Epydoc: Based on Javadoc. It is now discontinued (last release was 2008), but it can still be found in certain projects.
+
+See [this tutorial]() to get started. Here is a very minimal example with Numpydoc syntax. If you have a module called `mymodule.py`
+```python
+"""Docstring for my module.py.
+
+All docstrings start and end with triple double quotes.
+
+"""
+
+
+def add_numbers(number1, number2):
+    """For obvious functions a single-line description is enough."""
+    return number1 + number2
+
+
+class MyClass:
+    """One-line summary of MyClass.
+
+    For more complex code, give a one-line summary followed by a
+    further description that can go over multiple lines.
+
+    Attributes
+    ----------
+    my_float : float
+        Description of attribute.
+
+    """
+
+    def __init__(self, my_float):
+        self.my_float = my_float
+
+    def multiply(self, number):
+        """Return number * self.my_float.
+
+        Parameters
+        ----------
+        number : float
+            This is multiplied by self.my_float.
+
+        Returns
+        -------
+        float
+            Result of multiplication.
+
+        """
+        return self.my_float * number
+```
+you can use
+```
+python
+>>> import mymodule
+>>> help(mymodule)
+>>> help(mymodule.MyClass.multiply)
+```
+to obtain information on how to use the code in `mymodule.py`.
+
 
 ## Find bugs before they find you
 Testing and common subtle pitfalls
