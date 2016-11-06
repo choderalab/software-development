@@ -1,8 +1,8 @@
 # Python coding best practices
 
 You are writing code that you and other people will read and modify multiple times, so there are few things to keep in mind that will simplify your life:
-- **Keep it simple, clean and documented.** Your code is your best methods section! Write it so that your colleagues can understand it easily. Write the documentation so that you will remember what you did 6 months from now.
-- **Make it robust and extensible.** Writing robust code means you will spend less time debugging, or (even worse) analyzing results from an incorrect code. Writing extensible code means you will spend less time modifying it.
+- **Keep it simple, clean and documented.** Your code and your documentation are your best methods section! Write it so that your colleagues can understand it easily, and that you will remember what you did 6 months from now.
+- **Make it robust and extensible.** Writing robust code means you will spend less time debugging, or even worse, analyzing results from an incorrect code. Writing extensible code means you will spend less time modifying it.
 
 This article tries to offer practical suggestions on how to achieve these two (sometimes clashing) goals.
 
@@ -10,12 +10,12 @@ This article tries to offer practical suggestions on how to achieve these two (s
 2. [Keep clean and adhere to PEP8](#keep-clean-and-adhere-to-pep8)
 3. [Document your code](#document-your-code)
 4. [Find bugs before they find you](#find-bugs-before-they-find-you)
-5. [Know the basic OOP design principles](#know-the-basic-oop-design-principles)
+5. [Know the basics of OOP design](#know-the-basics-of-oop-design)
 
 
 ## Use a modern environment
 
-- **Use Python 3!** Almost all scientific packages have now added Python 3 support, and many are making plans to drop Python 2 support.
+- **Support Python 3!** Almost all scientific packages have now added Python 3 support, and many are making plans to drop Python 2.
 
 - **Use a good editor.** Until you try, you have no idea how much it can speed you up. It will catch syntactic (and some semantic) errors for you. Autocompletion will save you from misspelling variable/function names. The "jump to definition" (and documentation) feature will spare you a lot of file browsing looking for other code. My personal favorite is PyCharm, but any editor with those features will do.
 
@@ -28,7 +28,7 @@ This article tries to offer practical suggestions on how to achieve these two (s
 
 - **Adopt different naming conventions for constants, variables, types, and modules.** It is much easier to understand the code if you can immediately distinguish functions from classes just based on their name.
 
-Public | Internal usage only
+   Public | Internal usage only
 -------|--------------------
 `modulename` and `packagename` | `_modulename` and `_packagename`
 `ClassName` (and `ExceptionName`) | `_ClassName` (and `_ExceptionName`)
@@ -37,14 +37,14 @@ Public | Internal usage only
 `CONSTANT_NAME` | `_CONSTANT_NAME`
 
 - **Know where you put your spaces.** It will be easier to search things in your code and browse it.
-```python
+   ```python
 # No spaces before or inside parentheses and brackets
 spam(ham[1], {eggs: 2})  # Yes
 spam( ham[ 1 ], { eggs: 2 } )  # No
 
 # A single space on either side of assignment, comparison, and boolean operators
 x = 1; y <= x; x and y  # Yes
- x=1;  y <=x; x  and  y  # No
+     x=1;  y <=x; x  and  y  # No
 function(arg1=3, arg2=4.0)  # Exception: no spaces for keyword arguments
 
 # A space after commas, colons, and semi-colons
@@ -54,9 +54,9 @@ ham[1:9], ham[1:9:3], ham[:9:3], ham[1::3], ham[1:9:]  # Exception: when using c
 ```
 
 - **Keep your lines short.** It allows to have two columns of code side by side, which is handy when reviewing diff in version control. You can use parentheses or `\` to go to a new line.
-```python
+   ```python
 my_long_string = ("can be divided over multiple "
-                  "lines using parentheses.")
+                      "lines using parentheses.")
 ```
 
 ## Document your code
@@ -65,9 +65,9 @@ Docstrings are special strings used to document your code that are internally su
 - [reStructuredText](http://docutils.sourceforge.net/docs/user/rst/quickstart.html): The most common format. Very flexible and natively supported by Sphinx.
 - [Numpydoc](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt): Generally more readable, but harder to comply to. A plugin adds Numpydoc support to Sphinx.
 - Google style: The Numpydoc syntax is based on this.
-- Epydoc: Based on Javadoc. It is now discontinued (last release was 2008), but it can still be found in certain projects.
+- Epydoc: Based on Javadoc. It is now discontinued (last release was 2008), but it can still be found in few projects.
 
-See [this tutorial]() to get started. Here is a very minimal example with Numpydoc syntax. If you have a module called `mymodule.py`
+See this [tutorial on documentation]() to get started. Here is a very minimal example with Numpydoc syntax. If you have a module called `mymodule.py`
 ```python
 """Docstring for my module.py.
 
@@ -124,13 +124,13 @@ to obtain information on how to use the code in `mymodule.py`.
 
 
 ## Find bugs before they find you
-Nothing wastes your time like a bug that does not raise an error. You can spend several week on some results before you realize your code is incorrect. There are few practices that can help you to **prevent introducing bugs.**
+Nothing wastes your time like a bug that does not raise an error. You can spend several weeks on some results before you realize your code is incorrect. It is even worse when you realize it after publication. There are few practices that can help you to **prevent introducing bugs.**
 - **First and foremost, write tests!** The paradigm of test-driven development is simple:
   1. Create a test that fails, so that you know you are testing the right thing.
-  2. Implement only the feature that make you pass the test.
+  2. Implement only the code that makes you pass the test.
   3. Clean up your code (refactor, update docs, etc.) and repeat.
 
-  Several Python tools (pytest, nose2, unittest), allow you to run tests automatically. This will lower the chances of introducing regressions when you modify your code. See this [tutorial on testing]() for more information, and to get started.
+  Several Python tools (pytest, nose2, unittest), allow you to easily run tests automatically. This will lower the chances of introducing regressions when you modify your code. See this [tutorial on testing]() for more information, and to get started.
 - **Do not compare floats for equality.** Because computers represent real numbers in binary with finite precision, you can obtain unexpected results. For example, `0.1` has a periodic binary representation, and it cannot be expressed by a finite number of bits.
 
    ```python
@@ -142,7 +142,7 @@ It is generally fine to compare for equality floats up to some finite precision
 >>> round(0.1 + 0.1 + 0.1, 10) == round(0.3, 10)
 True
 ```
-- **Do not use mutable types as default arguments.**  Python creates default arguments when functions are defined, not when they are called, so changes to your default object will be permanent.
+- **Do not use mutable types as default arguments.**  Python creates default arguments when functions are defined, not when they are called, so changes to your default object inside your function will be permanent.
 
    ```python
 def append(element, list_=[]):
@@ -206,11 +206,11 @@ def decorate_str(decorated, **kwargs):
             raise TypeError('got unexpected keyword arguments {}'.format(kwargs))
         return decoration + separator + decorated + separator + decoration
 ```
-   But it is usually more readable to just use keyword arguments (and does not break the autocompletion feature).
+   But it is usually more readable to just use keyword arguments (plus it does not break autocompletion).
    ```python
 def decorate_str(decorated, separator='_', decoration_string=''):
         return decoration_string + separator + decorated + separator + decoration_string
 ```
 
-## Know the basic OOP design principles
-The main goal of object-oriented programming (OOP) design is to provide guidelines to write **code that is fast to change without breaking backwards compatibility**. In science, breaking backwards compatibility often means impeding easy reproducibility. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
+## Know the basics of OOP design
+The main goal of object-oriented programming (OOP) design is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
