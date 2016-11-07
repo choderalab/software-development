@@ -10,19 +10,27 @@ This article tries to offer practical suggestions on how to achieve these two (s
 2. [Keep clean and adhere to PEP8](#keep-clean-and-adhere-to-pep8)
 3. [Document your code](#document-your-code)
 4. [Find bugs before they find you](#find-bugs-before-they-find-you)
-5. [Know the basics of OOP design](#know-the-basics-of-oop-design)
+   - [Easily avoidable common mistakes](#easily-avoidable-common-mistakes)
+5. [OOP design principles can make your project sustainable](#oop-design-principles-can-make-your-project-sustainable)
 
 
 ## Use a modern environment
 
-- **Support Python 3!** Almost all scientific packages have now added Python 3 support, and many are making plans to drop Python 2.
+- **Start with Python 3!** Python 3 should be your default interpreter. Many scientific codes signed on to [terminate support for Python 2](https://python3statement.github.io/) very soon. If you start with, or only support python 2.x, you will be left in the dark.
 
-- **Use a good editor.** Until you try, you have no idea how much it can speed you up. It will catch syntactic (and some semantic) errors for you. Autocompletion will save you from misspelling variable/function names. The "jump to definition" (and documentation) feature will spare you a lot of file browsing looking for other code. My personal favorite is PyCharm, but any editor with those features will do.
+- **Use a good editor.** Until you try, you have no idea how much it can speed you up.
+   - It will catch syntactic (and some semantic) errors for you.
+   - Autocompletion will save you from misspelling variable/function names.
+   - The "jump to definition" (and documentation) feature will spare you a lot of file browsing looking for other code.
+   
+   Great examples of editors are [PyCharm](https://www.jetbrains.com/pycharm/) and [Atom](https://atom.io/), but any editor with those features will do. If you are still on plain gedit, bite the bullet and **move to any editor made for the job**. It is a time investment with high returns.
 
 
 ## Keep clean and adhere to PEP8
 
-[PEP8](https://www.python.org/dev/peps/pep-0008/) is document defining a stylistic standard to make Python code more readable/understandable. Almost the entirety of python packages out there adopt it. The document is not the most exciting read, but the good news is __you don't have to read it if you are using a good editor__ that will highlight PEP8 violations. Here are summarized the most practically useful guidelines with a brief rationale.
+[PEP8](https://www.python.org/dev/peps/pep-0008/) is document defining a stylistic standard to make Python code more readable/understandable. Almost the entirety of python packages out there adopt it. The document is not the most exciting read, but the good news is __you don't have to read it if you are using a good editor__ that will highlight PEP8 violations. PyCharm has this feature enabled by default. For Atom, simply install the [linter-pep8](https://atom.io/packages/search?q=pep8) package.
+
+Here are summarized the most practically useful guidelines with a brief rationale.
 
 - **Favor consistency over PEP8.** First, know when *not* adhere to PEP8. It is a standard set of guidelines, not rules. If you are working on a codebase adopting other conventions, stick with them. Just have a consistent style throughout your project. If you are writing new code, there is no really good reason to not adhere to PEP8.
 
@@ -130,7 +138,9 @@ Nothing wastes your time like a bug that does not raise an error. You can spend 
   2. Implement only the code that makes you pass the test.
   3. Clean up your code (refactor, update docs, etc.) and repeat.
 
-  Several Python tools (pytest, nose2, unittest), allow you to easily run tests automatically. This will lower the chances of introducing regressions when you modify your code. See this [tutorial on testing]() for more information, and to get started.
+  Several Python tools ([pytest](http://doc.pytest.org/en/latest/), [nose2](http://nose2.readthedocs.io/en/latest/), [unittest](https://docs.python.org/3/library/unittest.html)), allow you to easily run tests automatically. This will lower the chance of introducing regressions when you modify your code. See this [tutorial on testing]() for more information, and to get started.
+
+### Easily avoidable common mistakes
 - **Do not compare floats for equality.** Because computers represent real numbers in binary with finite precision, you can obtain unexpected results. For example, `0.1` has a periodic binary representation, and it cannot be expressed by a finite number of bits.
 
    ```python
@@ -183,7 +193,7 @@ def square_integers(integer_list):
         return [squared_lookup_table[i] for i in integer_list]
 ```
    It is generally safer to leave any type of coercion to the user of the function since he knows what kind of data he intends to pass.
-- **Avoid abusing kwargs.** Using `**kwargs` is a general way to forward keyword arguments to another (possibly unknown) function, but when used instead of normal keyword arguments, it can mask bugs in your program.
+- __Avoid abusing `**kwargs`.__ Using `**kwargs` is a general way to forward keyword arguments to another (possibly unknown) function, but when used instead of normal keyword arguments, it can mask bugs in your program.
    ```python
 def decorate_str(decorated, **kwargs):
         """Prepend and append a decoration string."""
@@ -212,5 +222,5 @@ def decorate_str(decorated, separator='_', decoration_string=''):
         return decoration_string + separator + decorated + separator + decoration_string
 ```
 
-## Know the basics of OOP design
-The main goal of object-oriented programming (OOP) design is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
+## OOP design principles can make your project sustainable
+The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
