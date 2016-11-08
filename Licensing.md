@@ -78,7 +78,6 @@ While the permissive licenses facilitate broad use of the code, including use in
 
 Possibly one of the most well-known copyleft licenses, the GPL, or GNU General Public License, places strong conditions on developers of derivative works. Derivative works must not only be open-source, but must also carry the a compatible license, giving it a "viral" property. So, why would you use this license? If you want to make sure that useful derivatives of your work are freely available to other developers, this may be an appropriate license.
 
-While this may seem to make your project undesirable from some, e.g., commercial entities' points of view, it is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project uses GROMACS, a GPL-licensed software package, but does not need to release the source code of the client as they have [obtained special permission](https://foldingathome.stanford.edu/support/faq/opensource/) from the GROMACS developers.
 
 As the GPL is quite lengthy, we have not reproduced it here, but you may find a fuller description [on this page](http://choosealicense.com/licenses/gpl-3.0/)
 
@@ -90,6 +89,38 @@ When you are writing a library that will primarily be accessed through an interf
 
 While the GPL and LGPL are intended to ensure that users of code can access the internals, what about code that users never receive? Increasinly, code is being delivered as a service via the Internet, such that users will never see one instruction. The AGPL (GNU Affero General Public License), is intended for this case. It requires that even derivative works only visible through a web service API be made open source. For more information on this license, check [this page](http://choosealicense.com/licenses/agpl-3.0/).
 
+## Relicensing
+
+### Dual license
+
+What if you like the idea of the GPL, but also have commercial partners interested in your code but not the GPL? Or what if your scientific collaborators have written incompatible code?
+It is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project uses GROMACS, a GPL-licensed software package, but does not need to release the source code of the client as they have [obtained special permission](https://foldingathome.stanford.edu/support/faq/opensource/) from the GROMACS developers.
+
+### Changing the license
+
+Sometimes, over the course of a project, the developers may decide that the original license is no longer appropriate. The license can be changed, though, with the consent of the copyright holders. For a list of examples, [the Wikipedia page](https://en.wikipedia.org/wiki/Software_relicensing) is helpful.
+
+### Getting the team on board
+
+In a project with many developers, it can become burdensome to modify the license, or relicense the software. There are solutions, however:
+
+* Permissive licenses such as MIT generally would allow any developer (indeed, anyone) to use the code as she sees fit, thus obviating the legal problem (though not the social one)
+
+* If you're using a copyleft license, but, for instance, want to also offer a commercial license, having developers sign a _Contributor agreement_ can specify when and how these changes can take place.
+
+### Contributor agreement
+
+So, what's a contributor agreement?
+
+From the OSI FAQ:
+>Many open source projects will only accept patches (code contributions or documentation contributions) from people who have submitted a legal document known as a contributor agreement. Contributor agreements are not open source licenses — rather, they are a way for the contributor to tell the project that it has the right to distribute the new contributions under the project's existing open source license. (Some contributor agreements also allow for the project to distribute the contributions under other open source licenses too, which enables projects to change their license in the future, and some agreements even allow the project to distribute the contributions under any license the project wants.)
+
+[Source](https://opensource.org/faq#contributor-agreements)
+
 ## License Compatibility
 
-Last, but certainly not least, is the issue of license compatibility. In science, we need to be able to incorporate each other's contributions in order to make full use of the body of scientific knowledge. Certainly, we don't want licensing concerns to interfere with scientific productivity. In general, the permissive licenses are not a serious concern for compatibility with derivative works. However, the copyleft licenses may pose an issue; for more information on compatibility with GPL-style licenses, see [this page](https://www.gnu.org/licenses/license-list.en.html).
+Next is the issue of license compatibility. In science, we need to be able to incorporate each other's contributions in order to make full use of the body of scientific knowledge. Certainly, we don't want licensing concerns to interfere with scientific productivity. In general, the permissive licenses are not a serious concern for compatibility with derivative works. However, the copyleft licenses may pose an issue; for more information on compatibility with GPL-style licenses, see [this page](https://www.gnu.org/licenses/license-list.en.html).
+
+## Recommendations
+
+Because the legal issues associated with maintaining a copyleft license while simultaneously allowing full collaborations can become burdensome, we recomment a permissive license such as the MIT license. However, it is important to decide for yourself what priorities you have and what resources you will have available to assist in license management.
