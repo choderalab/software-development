@@ -109,16 +109,89 @@ As you can see, while it shares a lot of Python's nice clean syntax, we also dec
 
 Note that we have some extra calls to ensure that the type is as we declared. However, it is otherwise as simple as calling a Python function.
 
+### PyCuda/PyOpenCL
+
+Suppose the intensive part of your code would be ideal as a custom GPU kernel, frameworks like Tensorflow and Theano are not appropriate, but you do not want to write an entire package in C++. There are options: [PyCuda](https://documen.tician.de/pycuda/index.html) offers a nice wrapper around the Nvidia CUDA API, and allows you to write only the kernel in C++, leaving everything else in Python (example taken from PyCuda homepage):
+
+```
+import pycuda.autoinit
+import pycuda.driver as drv
+import numpy
+
+from pycuda.compiler import SourceModule
+mod = SourceModule("""
+__global__ void multiply_them(float *dest, float *a, float *b)
+{
+  const int i = threadIdx.x;
+  dest[i] = a[i] * b[i];
+}
+""")
+
+multiply_them = mod.get_function("multiply_them")
+
+a = numpy.random.randn(400).astype(numpy.float32)
+b = numpy.random.randn(400).astype(numpy.float32)
+
+dest = numpy.zeros_like(a)
+multiply_them(
+        drv.Out(dest), drv.In(a), drv.In(b),
+        block=(400,1,1), grid=(1,1))
+        
+#parentheses added
+print(dest-a*b)
+```
+
+If your application is appropriate for the GPU, this may be an easy option. But what about GPUs other than Nvidia's? You can use [PyOpenCL](https://documen.tician.de/pyopencl/index.html), which allows you to use any OpenCL-compatible device. An example taken from PyOpenCL's homepage:
+
+```python
+from __future__ import absolute_import, print_function
+import numpy as np
+import pyopencl as cl
+
+a_np = np.random.rand(50000).astype(np.float32)
+b_np = np.random.rand(50000).astype(np.float32)
+
+ctx = cl.create_some_context()
+queue = cl.CommandQueue(ctx)
+
+mf = cl.mem_flags
+a_g = cl.Buffer(ctx, mf.READ_ONLY | mf.COPY_HOST_PTR, hostbuf=a_np)
+b_g = cl.Buffer(ctx, mf.READ_ONLY | mf.COPY_HOST_PTR, hostbuf=b_np)
+
+prg = cl.Program(ctx, """
+__kernel void sum(
+    __global const float *a_g, __global const float *b_g, __global float *res_g)
+{
+  int gid = get_global_id(0);
+  res_g[gid] = a_g[gid] + b_g[gid];
+}
+""").build()
+
+res_g = cl.Buffer(ctx, mf.WRITE_ONLY, a_np.nbytes)
+prg.sum(queue, a_np.shape, None, a_g, b_g, res_g)
+
+res_np = np.empty_like(a_np)
+cl.enqueue_copy(queue, res_np, res_g)
+
+# Check on CPU with Numpy:
+print(res_np - (a_np + b_np))
+print(np.linalg.norm(res_np - (a_np + b_np)))
+```
+
+Note that these may require substantial knowledge of GPU programming, but automate a large portion of the typical boilerplate, making them an attractive option for many applications.
+
 ## Recommendations
 
 Although your application may fit another paradigm, in general, we recommend pursuing acceleration in this order:
 
-* NumPy - Your code should already be using this, but if it's not, this could be an easy speedup
+* [NumPy](http://www.numpy.org/) - Your code should already be using this, but if it's not, this could be an easy speedup
 
-* Numba - May require only a simple decorator; in more involved cases, may just require rearranging some variables
+* [Numba](http://numba.pydata.org/) - May require only a simple decorator; in more involved cases, may just require rearranging some variables
 
-* Tensorflow/Theano - Operates under a different paradigm, but very useful for some communities (e.g., deep learning), also provides automatic differentiation. 
+* [Tensorflow](https://www.tensorflow.org/)/[Theano](http://deeplearning.net/software/theano/) - Operates under a different paradigm, but very useful for some communities (e.g., deep learning), also provides automatic differentiation. 
 
-* Cython - When nothing else fits your application, Cython is a productive option. Pure Python is still valid Cython, so you can change the code slowly to add static typing and other performance-enhancing features until desired performance is achieved.
+* [PyCuda](https://documen.tician.de/pycuda/index.html)/[PyOpenCL](https://documen.tician.de/pyopencl/index.html) - If you need to write a piece of code for a GPU or other accelerated processing device, these libraries can make it as painless as possible.
+
+* [Cython](http://cython.org/) - When nothing else fits your application, Cython is a productive option. Pure Python is still valid Cython, so you can change the code slowly to add static typing and other performance-enhancing features until desired performance is achieved.
 
 * C/C++ extensions - Sometimes for very application-specific purposes this is the best option (especially when communicating with GPUs and other specialized devices). However, it can be very time consuming, and should be used as a last resort. 
