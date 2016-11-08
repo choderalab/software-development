@@ -11,7 +11,9 @@ licenses into two categories:
 
 It is also important to remember that different licenses may not be compatible with each other. For instance, if you use a "copyleft" licensed codebase to develop your codebase, you may not be able to use a permissive license. See below for further discussion of this issue. **It is also critical to note that having an open source license does not preclude dual licensing, that is, both open source and commercial (with permission)**
 
-For a comparison of many different licenses, we have found [this table](http://choosealicense.com/appendix/) very useful. Some brief descriptions of common licenses are provided below.
+## Preliminary Resources
+
+For an overview of various licenses for scientific programmers, [this article](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598) can be useful. For a comparison of many different licenses, we have found [this table](http://choosealicense.com/appendix/) very useful. Some brief descriptions of common licenses are provided below. Finally, the Open Source Initiative (OSI), which is widely trusted to define "open source," can be found [here](https://opensource.org/).
 
 ## Permissive Licenses
 
