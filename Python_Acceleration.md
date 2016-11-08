@@ -54,7 +54,59 @@ That's it. Just a decorator. What happens under the hood? The `jit` decorator ta
 
 ## Extensions to Python
 
-Sometimes, you don't want to add an extra dependency, or the libraries available do not cover your use case. Short of resorting to writing your code directly in C, with the attendant boilerplate to connect back to Python. Fortunately, there is a solution in the Python ecosystem: [Cython](http://cython.org/). Cython itself is a superset of Python, allowing type declarations and seamless import of C and C++ functions. It is also an optimizing compiler that first converts the Cython into C, and then compiles the C into native code, which can be delivered as a binary.
+### Cython
 
-Cython is the 
+Sometimes, you don't want to add an extra dependency, or the libraries available do not cover your use case. Short of resorting to writing your code directly in C, with the attendant boilerplate to connect back to Python. Fortunately, there is a solution in the Python ecosystem: [Cython](http://cython.org/). Cython itself is a superset of Python, allowing type declarations and seamless import of C and C++ functions. It is also an optimizing compiler that first converts the Cython into C, and then compiles the C into native code, which can be delivered as a binary. To install, if you have Anaconda (see above if you don't), it's just `conda install cython`
+
+Cython is also a straightforward way to connect Python code to C code, as Cython can both be readily imported by Python, and can readily access C libraries. As with Numba, it can require some finesse to ensure that the Cython code you write does not need to call the intepreter very often. To judge this, one can simply use `cython -a my_code.pyx` to generate an HTML file with lines highlighted based on the frequency of interpreter calls.
+
+#### Example
+As an example of code that has been optimized such that no intepreter calls are necessary at all, we have reproduced some code from one of our own projects, [Yank](https://github.com/choderalab/yank), a free energy calculation tool:
+
+```cython
+cimport cython
+from libc.math cimport exp, isnan
+from libc.stdio cimport printf
+cdef extern from 'stdlib.h' nogil:
+    double drand48()
+
+@cython.wraparound(False)
+@cython.cdivision(True)
+@cython.boundscheck(False)
+cpdef long _mix_replicas_cython(long nswap_attempts, long nstates, long[:] replica_states, double[:,:] u_kl, long[:,:] Nij_proposed, long[:,:] Nij_accepted) nogil:
+    cdef long swap_attempt
+    cdef long i, j, istate, jstate, tmp_state
+    cdef double log_P_accept
+    for swap_attempt in range(nswap_attempts):
+        i = <long>(drand48()*nstates)
+        j = <long>(drand48()*nstates)
+        istate = replica_states[i]
+        jstate = replica_states[j]
+        if (isnan(u_kl[i, istate]) or isnan(u_kl[i, jstate]) or isnan(u_kl[j, istate]) or isnan(u_kl[j, jstate])):
+            continue
+        log_P_accept = - (u_kl[i, jstate] + u_kl[j, istate]) + (u_kl[j, jstate] + u_kl[i, istate])
+        Nij_proposed[istate, jstate] +=1
+        Nij_proposed[jstate, istate] +=1
+        if(log_P_accept>=0 or drand48()<exp(log_P_accept)):            
+            tmp_state = replica_states[i]
+            replica_states[i] = replica_states[j]
+            replica_states[j] = tmp_state
+            Nij_accepted[i,j] += 1
+            Nij_accepted[j,i] += 1
+    return 0
+```
+
+As you can see, while it shares a lot of Python's nice clean syntax, we also declare variable types and manage them carefully. By doing this, we can ensure that we get the performance of C, but where using the code is as simple as:
+```python
+        from .mixing._mix_replicas import _mix_replicas_cython
+
+        replica_states = md.utils.ensure_type(self.replica_states, np.int64, 1, "Replica States")
+        u_kl = md.utils.ensure_type(self.u_kl, np.float64, 2, "Reduced Potentials")
+        Nij_proposed = md.utils.ensure_type(self.Nij_proposed, np.int64, 2, "Nij Proposed")
+        Nij_accepted = md.utils.ensure_type(self.Nij_accepted, np.int64, 2, "Nij accepted")
+        _mix_replicas_cython(self.nstates**4, self.nstates, replica_states, u_kl, Nij_proposed, Nij_accepted)
+```
+
+Note that we have some extra calls to ensure that the type is as we declared. However, it is otherwise as simple as calling a Python function.
+
 
