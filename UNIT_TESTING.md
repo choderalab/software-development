@@ -8,14 +8,14 @@
 
 ## Why create unit tests?
 * They tell us whether the code in question is working correctly
-* They help ensure new commits don't break the functionality of the code
 * They place basic guaranties on end-users that code is minimally trustworthy
+* They help ensure new commits don't break the functionality of the code
 
 ### Unit tests versus integration tests
-* Unit tests verify whether a piece of code---or _unit_ of code---is working correctly, whereas an integration test ensures that
+Unit tests verify whether a piece of code---or _unit_ of code---is working correctly, whereas an integration test ensures that
 different pieces of code work together as whole i.e. that different pieces of code are well _integrated_.
 
-## Examples
+## Simple example
 
 For the sake of example, let's say we've created the function below
 
@@ -39,8 +39,22 @@ def test_make_integer(float_number):
 
 The test is simple, has an informative name, and verifies a single aspect of the code.
 
-Writing unit tests for scientific computing is usually more difficult.
-* Highlight particularly nice tests from around the Choderalab Github repository.
+In this example, the test has been written using the `assert` command, which throws an `AssertionError` if the logical statement that proceeds
+it is false. 
+
+## Unit tests for scientific computing
+
+When writing tests for scientific software, unit tests are especially important 
+to help verify the code is capable of addressing the scientific questions one has. 
+This can be achieved by test the code on a problem one already knows the answer to.
+For instance, if the scientific tool is a global optimization algorithm, a basic test
+would be to find the minimum of a simple quadratic function, such as `y = x*x`.
+Or, if the scientific tool is a Markov chain Monte Carlo sampler, then one can generate samples
+from a distribution one already knows the statistical properties, such as a Gaussian distribution. 
+ 
+Good example of tests for scientific computing are the `pymbar` tests:
+
+https://github.com/choderalab/pymbar/blob/master/pymbar/tests/test_mbar.py
 
 ## Python software
 There are a few programs that can be used to automate the testing of the code, such as
@@ -48,13 +62,11 @@ There are a few programs that can be used to automate the testing of the code, s
 * unittest: https://docs.python.org/3/library/unittest.html#module-unittest
 * nose2: http://nose2.readthedocs.io/en/latest/
 
-### Example of using Pytest
-[To do]
-
-## The format of tests
-* The naming convention of tests
-* Separate folder for all tests, called `tests`
-* Examples from the lab
+## Additional points and conventions
+* Typically all tests are contained in a folder called `tests`
+* Functions that evaluate tests follow the naming convention `test_foo_bar`
+* Classes that contain a number of related tests follow the naming convention `TestsFooBar`
+* Unit tests should be as fast as possible
 
 ## References and further reading
 http://docs.python-guide.org/en/latest/writing/tests/
