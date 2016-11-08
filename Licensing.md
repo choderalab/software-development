@@ -44,4 +44,26 @@ SOFTWARE.
 ```
 
 As you can see, this license grants permission for users and developers to do as they please, and indemnifies the developers against any warranty claims.
-Developers of derivative works need only include this notice. This is 
+Developers of derivative works need only include this notice. This can be ideal for academics, since it allows broad use of new ideas yet still can ensure that the appropriate people receive credit for their works.
+
+[MIT license description](http://choosealicense.com/licenses/mit/)
+
+### Apache License
+
+This license is slightly less permissive than the MIT license above. Among other differences, the Apache license requires that derivative works state the changes that were made (though disclosure of source code is not required). Importantly, the Apache license also provides an explicit grant of patent license to users and developers. This prevents developers of derivative works from suing for patent infringement. As the license is more lengthy, we have not reproduced it here. For more information about the Apache licnese, [Check here](http://choosealicense.com/licenses/apache-2.0/).
+
+### BSD License (3-clause, new)
+
+The BSD license is another set of permissive licenses with minor variations between them. The new license has an explicit statement that the authors of the software may not be used to endorse derivative works without permission:
+
+>Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+  
+  This is a useful feature for those who are concerned that authors of derivative works may invoke the contributors of the project and damage their reputation in the process.
+  
+  The BSD license is otherwise similar to the MIT license, and you can [find it here](http://choosealicense.com/licenses/bsd-3-clause/). 
+  
+  NB: There are also other BSD licenses not discussed here. More details can be found on this [comparison sheet](http://choosealicense.com/appendix/)
+  
+## Copyleft Licenses
