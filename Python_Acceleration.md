@@ -109,4 +109,16 @@ As you can see, while it shares a lot of Python's nice clean syntax, we also dec
 
 Note that we have some extra calls to ensure that the type is as we declared. However, it is otherwise as simple as calling a Python function.
 
+## Recommendations
 
+Although your application may fit another paradigm, in general, we recommend pursuing acceleration in this order:
+
+* NumPy - Your code should already be using this, but if it's not, this could be an easy speedup
+
+* Numba - May require only a simple decorator; in more involved cases, may just require rearranging some variables
+
+* Tensorflow/Theano - Operates under a different paradigm, but very useful for some communities (e.g., deep learning), also provides automatic differentiation. 
+
+* Cython - When nothing else fits your application, Cython is a productive option. Pure Python is still valid Cython, so you can change the code slowly to add static typing and other performance-enhancing features until desired performance is achieved.
+
+* C/C++ extensions - Sometimes for very application-specific purposes this is the best option (especially when communicating with GPUs and other specialized devices). However, it can be very time consuming, and should be used as a last resort. 
