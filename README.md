@@ -4,12 +4,12 @@ A community-based primer on software development best practices for computationa
 
 ## Table of Contents
 
-* [`LICENSING_GUIDELINES.md`](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md) - Start by selecting an appropriate license for your code
-* [`PYTHON_CODING.md`](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md) - Follow these Python conventions to write extensible code that invites collaboration
-* [`UNIT_TESTING.md`](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md) - Testing your code to make sure it does what you expect it to
-* [`CONTINUOUS_INTEGRATION.md`](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md) - Setting up continuous integration to ensure new will not break things
-* [`PYTHON_OPTIMIZATION.md`](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md) - Speeding up your Python code without losing your mind
-* [`PACKAGING_AND_DEPLOYMENT.md`](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md) - Package your code and allow others to install it with minimal hassle
+* [`__Licensing Guidelines__`](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md): Start by selecting an appropriate license for your code
+* [`PYTHON CODING`](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md) - Follow these Python conventions to write extensible code that invites collaboration
+* [`UNIT TESTING`](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md) - Testing your code to make sure it does what you expect it to
+* [`CONTINUOUS INTEGRATION`](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md) - Setting up continuous integration to ensure new will not break things
+* [`PYTHON OPTIMIZATION`](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md) - Speeding up your Python code without losing your mind
+* [`PACKAGING AND DEPLOYMENT`](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md) - Package your code and allow others to install it with minimal hassle
 
 ## How to Contribute
 
