@@ -1,9 +1,10 @@
 # Software Development Best Practices for Computational Chemistry
 
-A community-based primer on software development best practices for computational chemistry.
+A community-oriented primer on software development best practices for modern computational chemistry.
 
 ## Table of Contents
 
+* [__Philosophy__](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md): Who should read this guide and what it tries to accomplish
 * [__Licensing Guidelines__](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md): Start by selecting an appropriate license for your code
 * [__Python Coding Conventions__](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md): Follow these Python conventions to write extensible code that invites collaboration
 * [__Unit Testing__](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md): Testing your code to make sure it does what you expect it to
