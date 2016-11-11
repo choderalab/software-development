@@ -50,9 +50,11 @@ to help verify the code is capable of addressing the scientific questions at han
 This can be achieved by testing the code on a problem one already knows the answer to.
 For instance, if the scientific tool is an optimization algorithm, a basic test
 would be to find the minimum of a simple quadratic function, such as `y = x*x`.
-Or, if the scientific tool is a Markov chain Monte Carlo sampler, then one can generate samples
+Or, if the scientific tool is a Markov chain Monte Carlo (MCMC) sampler, then one can generate samples
 from a distribution with known statistical properties, such as a Gaussian distribution, and
 check to ensure that moments are correctly reproduced to within some minimal statistical error.
+For an in-depth review on testing MCMC code, have a look at this [paper](https://arxiv.org/abs/1412.5218)
+by Grosse and Duvenaud.
 
 Good example of tests for scientific computing are the `pymbar` tests:
 
@@ -77,6 +79,7 @@ Once you have the tests automated, you can also enable [continuous integration](
 * http://docs.python-guide.org/en/latest/writing/tests/
 * http://pythontesting.net/framework/pytest/pytest-introduction/
 * http://www.codesimplicity.com/post/the-philosophy-of-testing/
+* [Testing MCMC code](https://arxiv.org/abs/1412.5218)
 
 ## Advanced topics
 * Testing code with stochastic outcomes
