@@ -5,11 +5,11 @@ A community-based primer on software development best practices for computationa
 ## Table of Contents
 
 * [__Licensing Guidelines__](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md): Start by selecting an appropriate license for your code
-* [__Python Coding Conventions__](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md) - Follow these Python conventions to write extensible code that invites collaboration
-* [__Unit Testing__](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md) - Testing your code to make sure it does what you expect it to
-* [__Continuous Integration__](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md) - Setting up continuous integration to ensure new will not break things
-* [__Python Optimization__](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md) - Speeding up your Python code without losing your mind
-* [__Packaging and Deployment__](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md) - Package your code and allow others to install it with minimal hassle
+* [__Python Coding Conventions__](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md): Follow these Python conventions to write extensible code that invites collaboration
+* [__Unit Testing__](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md): Testing your code to make sure it does what you expect it to
+* [__Continuous Integration__](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md): Setting up continuous integration to ensure new will not break things
+* [__Python Optimization__](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md): Speeding up your Python code without losing your mind
+* [__Packaging and Deployment__](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md): Package your code and allow others to install it with minimal hassle
 
 ## How to Contribute
 
