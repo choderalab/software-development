@@ -1,5 +1,26 @@
 # Documentation
 
+## Have a good README
+
+The `README.md` of a GitHub repo is like a welcome mat: It's the first thing you see when you arrive on a project's doorstep.
+The easier you can make it for users or other developers to glean important information about your project, the better.
+
+Here are some great examples of `README.md` files:
+- [`mdtraj`](https://github.com/mdtraj/mdtraj/blob/master/README.md)
+- [`MDAnalysis`](https://github.com/MDAnalysis/mdanalysis/README.md)
+- [Holy Build Box](https://github.com/phusion/holy-build-box/blob/master/README.md)
+
+Many of these `README.md` files include a series of badges at the top.
+These badges are not only visual indicators of certain information---whether the repo is in a healthy state with passing tests, which channels are available for obtain the tool, which version number is current, and how many times the software has been downloaded---they provide quick links to a variety of useful integrated services.
+
+Some useful badges:
+- [travis badge](https://docs.travis-ci.com/user/status-images/)
+- [AppVeyor badge](https://www.appveyor.com/docs/status-badges/)
+- [pypi version and downloads badges](http://codeinthehole.com/writing/pypi-readme-badges/)
+- [Anaconda Cloud version and download badge](https://anaconda.org/anaconda/anaconda/badges)
+- [Depsy badge](http://blog.impactstory.org/introducing-depsy/)
+- [Zenodo DOI badge](https://guides.github.com/activities/citable-code/)
+
 ## Documentation is the primary way to learn about how code works.
 
 There are many tools that can be used to write documentation. The easiest to start with is Github wiki which uses markdown syntax just like the rest of github.
