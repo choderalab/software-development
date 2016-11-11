@@ -22,6 +22,7 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 * [Patrick B. Grinaway](https://github.com/pgrinaway) - `<patrick.grinaway@choderalab.org>`
 * [Andrea Rizzi](https://github.com/andrrizzi) - `<andrea.rizzi@choderalab.org>`
 * [Gregory Ross](https://github.com/gregoryross) - `<gregory.ross@choderalab.org>`
+* [Levi S. Naden](https://github.com/lnaden) - `<levi.naden@choderalab.org>`
 * [Arien ("Bas") S. Rusteburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
 
 ## License
