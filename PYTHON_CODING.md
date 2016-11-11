@@ -228,6 +228,12 @@ def decorate_str(decorated, separator='_', decoration_string=''):
 ## OOP design principles can make your project sustainable
 The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md) with practical advices on Python library/tool-making.
 
+## Use automated tools to help you write better code
+
+A large variety of automated tools can be integrated with GitHub to check your code for departures from the above guidelines, and even teach you better coding practices.
+Our favorites right now are [landscape.io](http://landscape.io/), intended to help keep technical debt under control by spotting problems early, and [Quantified Code](https://github.com/choderalab/software-development/issues/quantifiedcode.com), which can actually teach you better coding practices when it spots problematic code.
+Enabling these tools to watch your repository and monitor your pull requests is easy, and can save you a lot of hassle in the long run.
+
 ## Help Make this Page Better
 
 Want to contribute to this repository? Have a suggestion for an improvement?
