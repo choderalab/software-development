@@ -71,7 +71,10 @@ There are several ways to make use of [`conda`](http://conda.pydata.org) and the
 #### Conda-forge
 
 [Conda-Forge](https://conda-forge.github.io/) has emerged as the community standard way to automate release builds and uploads to the Anaconda cloud for community-developed codes.
+Excellent documentation is available for [adding a recipe](https://conda-forge.github.io/#add_recipe) for automatically building your software for Windows, Linux, and OSX, provided it can easily be built using only `conda`-installable dependencies.
 
 #### Creating your own build process (e.g. Omnia)
 
-TODO: Describe Omnia here.
+The [Omnia](http://www.omnia.md/) software consortium was formed to make deployment of high-performance computational chemistry codes that can take advantage of GPU computing (such as [OpenMM](http://openmm.org)) easy, and to nucleate a community of interoperable codes for computational chemistry.
+The [Omnia build system](https://github.com/omnia-md/conda-recipes/blob/master/README.md) is similar to [Conda-Forge](https://conda-forge.github.io/), but uses specialized build infrastructure that provides CUDA and OpenCL capabilities.
+Instructions for contributing a recipe for building and deploying your code through Omnia can be found [here](https://github.com/omnia-md/conda-recipes/blob/master/README.md#contributing-a-recipe).

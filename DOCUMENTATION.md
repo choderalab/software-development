@@ -32,8 +32,8 @@ Some good examples of Sphinx documentation:
 
 ### Other documentation schemes
 
-* Collaborative documentation writing: [readme.io](http://readme.io)
-* [GitBook](https://www.gitbook.com)
+* [readme.io](http://readme.io): A collaborative system for writing documentation
+* [GitBook](https://www.gitbook.com): An online collaborative publishing toolchain
 
 ## Clear examples encourage use of code
 
