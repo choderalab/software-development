@@ -226,7 +226,7 @@ def decorate_str(decorated, separator='_', decoration_string=''):
 ```
 
 ## OOP design principles can make your project sustainable
-The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
+The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md) with practical advices on Python library/tool-making.
 
 ## Help Make this Page Better
 
