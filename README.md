@@ -20,6 +20,7 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 
 * [John D. Chodera](https://github.com/jchodera) - `<john.chodera@choderalab.org>`
 * [Patrick B. Grinaway](https://github.com/pgrinaway) - `<patrick.grinaway@choderalab.org>`
+* [Andrea Rizzi](https://github.com/andrrizzi) - `<andrea.rizzi@choderalab.org>`
 * [Gregory Ross](https://github.com/gregoryross) - `<gregory.ross@choderalab.org>`
 * [Arien ("Bas") S. Rusteburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
 
