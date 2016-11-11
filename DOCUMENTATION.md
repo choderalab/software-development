@@ -52,3 +52,11 @@ Good examples of good examples:
 Documenting what has changed with each revision or release of your code is an important part of recording when new features were added, existing features were changed, or when critical bugs were fixed.
 
 [autoprotocol](http://autoprotocol.org) has a great example of good [changelog documentation](http://autoprotocol-python.readthedocs.io/en/latest/changelog.html) using [RTD](https://readthedocs.org/)
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!

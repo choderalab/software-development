@@ -25,3 +25,11 @@ Without discouraging innovation and exploration of new approaches, we hope to en
 ## What does this guide contain?
 
 We intend to cover only the most important aspects of the critical components of software development for computational chemistry, providing pointers for those who wish to read about certain topics in more depth.
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!

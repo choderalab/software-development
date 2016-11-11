@@ -64,6 +64,8 @@ There are a few programs that can be used to automate the testing of the code, s
 * [`nose2`](http://nose2.readthedocs.io/en/latest/): A modern replacement for the now-unmaintained (and no longer recommended) [`nose`](http://nose.readthedocs.io/en/latest/) testing framework
 * [`unittest`](https://docs.python.org/3/library/unittest.html#module-unittest): A standard Python testing framework with some limitations
 
+Once you have the tests automated, you can also enable [continuous integration](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md) for your project to ensure these tests are run on any proposed code changes and ensure changes do not break the code.
+
 ## Additional points and conventions
 * All tests are typically contained in a folder called `tests/`.
 * The tests folder is typically installed along with the package (by placing it in `packagename/tests/`), which allows the installed package to be tested in place.
@@ -79,3 +81,12 @@ There are a few programs that can be used to automate the testing of the code, s
 ## Advanced topics
 * Testing code with stochastic outcomes
 * Evaluating test coverage with tools like [coveralls](https://coveralls.io/)
+* [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!

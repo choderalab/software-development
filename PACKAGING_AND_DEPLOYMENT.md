@@ -78,3 +78,11 @@ Excellent documentation is available for [adding a recipe](https://conda-forge.g
 The [Omnia](http://www.omnia.md/) software consortium was formed to make deployment of high-performance computational chemistry codes that can take advantage of GPU computing (such as [OpenMM](http://openmm.org)) easy, and to nucleate a community of interoperable codes for computational chemistry.
 The [Omnia build system](https://github.com/omnia-md/conda-recipes/blob/master/README.md) is similar to [Conda-Forge](https://conda-forge.github.io/), but uses specialized build infrastructure that provides CUDA and OpenCL capabilities.
 Instructions for contributing a recipe for building and deploying your code through Omnia can be found [here](https://github.com/omnia-md/conda-recipes/blob/master/README.md#contributing-a-recipe).
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
