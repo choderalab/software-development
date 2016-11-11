@@ -220,3 +220,11 @@ Although your application may fit another paradigm, in general, we recommend pur
 * [PyCuda](https://documen.tician.de/pycuda/index.html)/[PyOpenCL](https://documen.tician.de/pyopencl/index.html): If you need to write a piece of code for a GPU or other accelerated processing device, these libraries can make it as painless as possible.
 * [Cython](http://cython.org/): When nothing else fits your application, Cython is a productive option. Pure Python is still valid Cython, so you can change the code slowly to add static typing and other performance-enhancing features until desired performance is achieved.
 * [C/C++ extensions](https://docs.python.org/3/extending/building.html): Sometimes for very application-specific purposes this is the best option (especially when communicating with GPUs and other specialized devices). However, it can be very time consuming, and should be used as a last resort.
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!

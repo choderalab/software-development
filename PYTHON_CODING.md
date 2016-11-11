@@ -22,7 +22,7 @@ This article tries to offer practical suggestions on how to achieve these two (s
    - It will catch syntactic (and some semantic) errors for you.
    - Autocompletion will save you from misspelling variable/function names.
    - The "jump to definition" (and documentation) feature will spare you a lot of file browsing looking for other code.
-   
+
    Great examples of editors are [PyCharm](https://www.jetbrains.com/pycharm/) and [Atom](https://atom.io/), but any editor with those features will do. If you are still on plain gedit, bite the bullet and **move to any editor made for the job**. It is a time investment with high returns.
 
 
@@ -75,7 +75,10 @@ Docstrings are special strings used to document your code that are internally su
 - Google style: The Numpydoc syntax is based on this.
 - Epydoc: Based on Javadoc. It is now discontinued (last release was 2008), but it can still be found in few projects.
 
-See this [tutorial on documentation]() to get started. Here is a very minimal example with Numpydoc syntax. If you have a module called `mymodule.py`
+See this [tutorial on documentation](https://github.com/choderalab/software-development/blob/master/DOCUMENTATION.md)) to get started.
+
+Here is a very minimal example with Numpydoc syntax.
+If you have a module called `mymodule.py`
 ```python
 """Docstring for my module.py.
 
@@ -138,7 +141,7 @@ Nothing wastes your time like a bug that does not raise an error. You can spend 
   2. Implement only the code that makes you pass the test.
   3. Clean up your code (refactor, update docs, etc.) and repeat.
 
-  Several Python tools ([pytest](http://doc.pytest.org/en/latest/), [nose2](http://nose2.readthedocs.io/en/latest/), [unittest](https://docs.python.org/3/library/unittest.html)), allow you to easily run tests automatically. This will lower the chance of introducing regressions when you modify your code. See this [tutorial on testing]() for more information, and to get started.
+  Several Python tools ([pytest](http://doc.pytest.org/en/latest/), [nose2](http://nose2.readthedocs.io/en/latest/), [unittest](https://docs.python.org/3/library/unittest.html)), allow you to easily run tests automatically. This will lower the chance of introducing regressions when you modify your code. See this [tutorial on testing](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md) for more information, and to get started.
 
 ### Easily avoidable common mistakes
 - **Do not compare floats for equality.** Because computers represent real numbers in binary with finite precision, you can obtain unexpected results. For example, `0.1` has a periodic binary representation, and it cannot be expressed by a finite number of bits.
@@ -223,4 +226,18 @@ def decorate_str(decorated, separator='_', decoration_string=''):
 ```
 
 ## OOP design principles can make your project sustainable
-The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article]() with practical advices on Python library/tool-making.
+The main goal of object-oriented programming (OOP) design principles is to provide guidelines to write **code that is fast to change, and changable without breaking backward compatibility**. In science, **breaking backward compatibility often means impeding easy reproducibility**. While this is especially important if you are writing a Python tool that other people will use, consider that you are the first user of your code, and learning about this principles (and when _not_ to apply them) can speed you up considerably. There is a [separate article](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md) with practical advices on Python library/tool-making.
+
+## Use automated tools to help you write better code
+
+A large variety of automated tools can be integrated with GitHub to check your code for departures from the above guidelines, and even teach you better coding practices.
+Our favorites right now are [landscape.io](http://landscape.io/), intended to help keep technical debt under control by spotting problems early, and [Quantified Code](https://github.com/choderalab/software-development/issues/quantifiedcode.com), which can actually teach you better coding practices when it spots problematic code.
+Enabling these tools to watch your repository and monitor your pull requests is easy, and can save you a lot of hassle in the long run.
+
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
