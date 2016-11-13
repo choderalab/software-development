@@ -33,6 +33,7 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 We're grateful to the contributions of many people who helped define much of these software development practices:
 * Robert McGibbon
 * Jason Swails
+* Matthew Harrigan
 * Kyle A. Beauchamp
 * Jan-Hendrk Prinz
 * David W. Swenson
