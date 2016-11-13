@@ -37,6 +37,8 @@ We're grateful to the contributions of many people who helped define much of the
 * Kyle A. Beauchamp
 * Jan-Hendrk Prinz
 * David W. Swenson
+* Martin K. Scherer
+* Frank Noe
 
 ## License
 
