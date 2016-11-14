@@ -32,14 +32,18 @@ https://guides.github.com/introduction/flow/index.html
 # More useful links
 
 The documentation for git:
+
 https://git-scm.com/
 
 A good guide on using git:
+
 https://www.atlassian.com/git/
 
 
 Some example projects on Github that are actively developed:
-Projects that use github actively:
+
 https://github.com/pandegroup/openmm
+
 https://github.com/numpy/numpy
+
 
