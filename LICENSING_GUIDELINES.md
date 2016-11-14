@@ -87,6 +87,8 @@ The BSD license is otherwise similar to the MIT license, and you can [find it he
 
 While the permissive licenses facilitate broad use of the code, including use in closed-source derivatives, sometimes it is deemed appropriate to incentivize further open source development. The so-called ["copyleft"](https://en.wikipedia.org/wiki/Copyleft) licenses provide exactly that: they use the copyright concept to require that developers of derivative works _also_ open source the derivative work.
 
+While incentivizing further open source development indeed is a worthy goal, it is important to note that many "copyleft" licenses may also dissuade commercial software vendors from relying on your software because of how it might affect their software, so choosing these could in some cases narrow your user base or make commercial vendors more reluctant to collaborate.
+
 ### GPL
 
 Possibly one of the most well-known copyleft licenses, the GPL, or GNU General Public License, places strong conditions on developers of derivative works. Derivative works must not only be open-source, but must also carry the a compatible license, giving it a "viral" property. So, why would you use this license? If you want to make sure that useful derivatives of your work are freely available to other developers, this may be an appropriate license.
