@@ -29,6 +29,25 @@ Below is a basic description of a workflow that uses github.
 
 https://guides.github.com/introduction/flow/index.html
 
+# Recommendations
+
+## For new projects
+
+If you are currently not using any version control for your software project, we recommend using `git`. Many repository hosts support git, and it is the easiest way of working with Github. 
+
+## For existing projects
+
+You may already have a codebases that uses a different version control system. A very popular version control software is Subversion (`svn`). It may be worth investing the effort to switch to `git`. While `git` has a slightly steeper learning curve, you may find the features it offers worth it. There are also ways to use `git` with an `svn` repository.
+
+https://git-scm.com/book/en/v1/Git-and-Other-Systems-Git-and-Subversion
+
+There are also guides available to help you migrate to `git` entirely:
+
+https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git
+
+## Mercurial 
+If you are using a tool like Mercurial (`hg`), you probably don't need to switch to `git`. There are [plugins](http://hg-git.github.io/) available that make it easy to interact with `git` repositories (such as the ones hosted on Github).  Although `git` is slightly more powerful out of the box, most of what you'll need will also be offered by Mercurial. People also often consider Mercurial to be easier to learn.
+
 # More useful links
 
 The documentation for git:
