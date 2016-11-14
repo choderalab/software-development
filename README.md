@@ -26,7 +26,7 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 * [Andrea Rizzi](https://github.com/andrrizzi) - `<andrea.rizzi@choderalab.org>`
 * [Gregory Ross](https://github.com/gregoryross) - `<gregory.ross@choderalab.org>`
 * [Levi S. Naden](https://github.com/lnaden) - `<levi.naden@choderalab.org>`
-* [Arien ("Bas") S. Rusteburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
+* [Arien ("Bas") S. Rustenburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
 
 ## Acknowledgments
 
