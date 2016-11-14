@@ -31,11 +31,14 @@ https://guides.github.com/introduction/flow/index.html
 
 # Recommendations
 
-## For new projects
 
-If you are currently not using any version control for your software project, we recommend using `git`. Many repository hosts support git, and it is the easiest way of working with Github. 
+## What tool should I use?
 
-## For existing projects
+### For new projects
+
+If you are currently not using any version control for your software project, we recommend using `git`. Many repository hosts support git, and it is the easiest way of working with Github.
+
+### For existing projects
 
 You may already have a codebases that uses a different version control system. A very popular version control software is Subversion (`svn`). It may be worth investing the effort to switch to `git`. While `git` has a slightly steeper learning curve, you may find the features it offers worth it. There are also ways to use `git` with an `svn` repository.
 
@@ -45,8 +48,23 @@ There are also guides available to help you migrate to `git` entirely:
 
 https://git-scm.com/book/en/v2/Git-and-Other-Systems-Migrating-to-Git
 
-## Mercurial 
+### Mercurial 
+
 If you are using a tool like Mercurial (`hg`), you probably don't need to switch to `git`. There are [plugins](http://hg-git.github.io/) available that make it easy to interact with `git` repositories (such as the ones hosted on Github).  Although `git` is slightly more powerful out of the box, most of what you'll need will also be offered by Mercurial. People also often consider Mercurial to be easier to learn.
+
+## What host should I use?
+
+We strongly recommend using Github.  Github makes collaboration on code very easy, and for small groups it offers unlimited private repositories. At the same time, it allows you to publish and share your completed projects with the open source community, to increase the impact of your code, and allow for contributions from the community. There are many integrations for Github that allow you to automatically test your code, assess the code quality, and host documentation, which makes the development even easier.
+
+## What workflow should I adopt?
+
+For small projects with few developers, a simple workflow that uses branches is a great way to keep development organized. Take a look at the [Github flow](https://guides.github.com/introduction/flow/index.html) model. In a nutshell, new code gets developed on a branch of the repository, and when the code is ready a pull-request is opened to discuss the merge with the main branch of the repository. This is a great way to do incremental development of the code for projects that have few developers, and a small codebase.
+
+Alternatively, on Github, opening a pull-request from a fork is just as easy, and it is the preferred way of having outside collaborators contribute to the codebase. This helps keeping the main code separate, while allowing other developers to experiment. Even within the same company or group, you may find that using forks lowers the barrier for development. It is a workflow worth considering.
+
+If you're starting a major project with many developers, you should consider the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model. It is probably too much effort for a small project with one or two developers, but it can help to keep a very active large software project organized. It provides strategies for maintaining the code and releasing new versions and bugfixes. 
+
+
 
 # More useful links
 
