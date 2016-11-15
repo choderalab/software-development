@@ -61,7 +61,7 @@ the new bug was.
 
 Developer actions should automatically trigger a CI process to run.
 When a developer wants to add new code, that code should be verified
-that it will not break anything. This severs not only as a means of bug
+that it will not break anything. This serves not only as a means of bug
 checking, but also validation that all components of a code continue to
 work well with each other. Consider the following example of upgrading a
 codebase from Python 2 to Python 3 comparability. Beyond syntax changes,
@@ -102,7 +102,7 @@ environment to avoid resource drains.
 
 ## GitHub CI Tools for You and Your Code
 
-Here we cover some CI options which can be integrate right now into your
+Here we cover some CI options which can be integrated right now into your
 GitHub code! This is by no means an exhaustive list, but GitHub keeps
 a handy page programs which can be integrated [here](https://github.com/integrations).
 
