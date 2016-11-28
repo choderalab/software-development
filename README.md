@@ -25,8 +25,20 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 * [Patrick B. Grinaway](https://github.com/pgrinaway) - `<patrick.grinaway@choderalab.org>`
 * [Andrea Rizzi](https://github.com/andrrizzi) - `<andrea.rizzi@choderalab.org>`
 * [Gregory Ross](https://github.com/gregoryross) - `<gregory.ross@choderalab.org>`
-* [Levi S. Naden](https://github.com/lnaden) - `<levi.naden@choderalab.org>`
-* [Arien ("Bas") S. Rusteburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
+* [Levi N. Naden](https://github.com/lnaden) - `<levi.naden@choderalab.org>`
+* [Arien ("Bas") S. Rustenburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
+
+## Acknowledgments
+
+We're grateful to the contributions of many people who helped define much of these software development practices:
+* Robert McGibbon
+* Jason Swails
+* Matthew Harrigan
+* Kyle A. Beauchamp
+* Jan-Hendrk Prinz
+* David W. Swenson
+* Martin K. Scherer
+* Frank Noe
 
 ## License
 
