@@ -7,7 +7,7 @@ The easier you can make it for users or other developers to glean important info
 
 Here are some great examples of `README.md` files:
 - [`mdtraj`](https://github.com/mdtraj/mdtraj/blob/master/README.md)
-- [`MDAnalysis`](https://github.com/MDAnalysis/mdanalysis/README.md)
+- [`MDAnalysis`](https://github.com/MDAnalysis/mdanalysis/blob/develop/README.rst)
 - [Holy Build Box](https://github.com/phusion/holy-build-box/blob/master/README.md)
 
 Many of these `README.md` files include a series of badges at the top.
