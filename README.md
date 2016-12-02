@@ -7,7 +7,7 @@ A community-oriented primer on software development best practices for modern co
 * [__Philosophy and Scope__](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md): Who should read this guide and what it tries to accomplish
 * [__Licensing Guidelines__](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md): Start by selecting an appropriate license for your code
 * [__Structuring Your Project__](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md): Structuring your project to achieve maximum gain with minimal pain
-* [__Version Control__](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md): Manage changes to your code over time
+* [__Version Control__](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md): Manage changes to your code over time to maintain its integrity
 * [__Python Coding Conventions__](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md): Follow these Python conventions to write extensible code that invites collaboration
 * [__Unit Testing__](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md): Testing your code to make sure it does what you expect it to
 * [__Continuous Integration__](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md): Setting up continuous integration to ensure new will not break things
