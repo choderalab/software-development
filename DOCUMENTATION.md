@@ -48,8 +48,8 @@ If you're using [`conda`](http://conda.pydata.org/docs/) for your code, you may 
 
 Some good examples of Sphinx documentation:
 
-* Sphinx docs, hosted on Read the Docs: [protons](http://constph-openmm.readthedocs.io) | [ensembler](http://ensembler.readthedocs.io)
-* Sphinx docs, built by travis and hosted on S3: [openmm](http://docs.openmm.org/7.0.0/userguide/index.html) | [mdtraj](http://mdtraj.org/) | [pymbar](http://pymbar.org/) | [yank](http://getyank.org) | [pymc](https://github.com/pymc-devs/pymc/tree/master/docs)
+* Sphinx docs, hosted on Read the Docs: [protons](http://protons.readthedocs.io) | [ensembler](http://ensembler.readthedocs.io)
+* Sphinx docs, built by travis and hosted on S3: [openmm](http://docs.openmm.org/7.1.0/userguide/index.html) | [mdtraj](http://mdtraj.org/) | [pymbar](http://pymbar.org/) | [yank](http://getyank.org) | [pymc](https://github.com/pymc-devs/pymc/tree/master/docs)
 
 ### Other documentation schemes
 
