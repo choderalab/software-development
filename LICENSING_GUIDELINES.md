@@ -147,3 +147,7 @@ Spot a typo? We're always looking to improve this document for the betterment of
 
 * Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
+
+|__Previous:__|__Next:__|
+|:---|---:|
+|[Philosophy and Scope](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)|[Structuring Your Project (Work in Progress)](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md)|
