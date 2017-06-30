@@ -1,13 +1,13 @@
 # Accelerating/Optimizing Python Code
 
 Python is a very clean and readable language for scientific (and other) development activities, but the same flexibility that makes code easy to write can often make it rather slow.
-Fortunately, the popularity of Python has created a number of solutions so that you don't have to go too far outside the Python ecosystem (sometimes not at all) in order to accelerate your code.
-In this brief, we will explore several options for accelerating your numerical computations in Python
+Fortunately, the popularity of Python has created a number of solutions so that you don't have to go too far outside the Python ecosystem (if at all) in order to accelerate your code.
+In this brief, we will explore several options for accelerating your numerical computations in Python.
 
 ## Python Libraries
 
 ### NumPy
-Before delving into Python extensions, we should first discuss the library you should already be using: [NumPy](http://www.numpy.org/).
+Before delving into Python extensions, we should first discuss the one library you should already be using: [NumPy](http://www.numpy.org/).
 
 [NumPy](http://www.numpy.org/), a powerful library for arrays, linear algebra, and more, is extremely popular and common.
 If you are using Continuum Analytics [Anaconda](https://www.continuum.io/downloads) to manage your Python packages (and if you aren't, you should be), you can install it easily with
@@ -142,7 +142,7 @@ However, it is otherwise as simple as calling a Python function.
 
 ### PyCuda/PyOpenCL
 
-Suppose the intensive part of your code would be ideal as a custom GPU kernel, frameworks like Tensorflow and Theano are not appropriate, but you do not want to write an entire package in C++.
+Suppose the intensive part of your code would be ideal as a custom GPU kernel, and frameworks like Tensorflow and Theano are not appropriate, but you do not want to write an entire package in C++.
 There are options: [PyCuda](https://documen.tician.de/pycuda/index.html) offers a nice wrapper around the Nvidia CUDA API, and allows you to write only the kernel in C++, leaving everything else in Python (example taken from PyCuda homepage):
 ```python
 import pycuda.autoinit
@@ -216,7 +216,7 @@ Although your application may fit another paradigm, in general, we recommend pur
 
 * [NumPy](http://www.numpy.org/): Your code should already be using this, but if it's not, this could be an easy speedup
 * [Numba](http://numba.pydata.org/): May require only a simple decorator; in more involved cases, may just require rearranging some variables
-* [Tensorflow](https://www.tensorflow.org/)/[Theano](http://deeplearning.net/software/theano/): Operates under a different paradigm, but very useful for some communities (e.g., deep learning), also provides automatic differentiation.
+* [Tensorflow](https://www.tensorflow.org/)/[Theano](http://deeplearning.net/software/theano/): Operates under a different paradigm, but very useful for some communities (e.g., deep learning) and provides automatic differentiation.
 * [PyCuda](https://documen.tician.de/pycuda/index.html)/[PyOpenCL](https://documen.tician.de/pyopencl/index.html): If you need to write a piece of code for a GPU or other accelerated processing device, these libraries can make it as painless as possible.
 * [Cython](http://cython.org/): When nothing else fits your application, Cython is a productive option. Pure Python is still valid Cython, so you can change the code slowly to add static typing and other performance-enhancing features until desired performance is achieved.
 * [C/C++ extensions](https://docs.python.org/3/extending/building.html): Sometimes for very application-specific purposes this is the best option (especially when communicating with GPUs and other specialized devices). However, it can be very time consuming, and should be used as a last resort.
@@ -228,3 +228,7 @@ Spot a typo? We're always looking to improve this document for the betterment of
 
 * Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
+
+|__Previous:__||__Next:__|
+|:---|---|---:|
+|[Documentation](https://github.com/choderalab/software-development/blob/master/DOCUMENTATION.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Packaging and Deployment](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md)|
