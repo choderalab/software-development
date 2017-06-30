@@ -82,6 +82,6 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
 
-|__Previous:__|__Next:__|
-|:---|---:|
-|[Continuous Integration](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md)|[Python Optimization](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md)|
+|__Previous:__||__Next:__|
+|:---|---|---:|
+|[Continuous Integration](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Python Optimization](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md)|
