@@ -94,6 +94,6 @@ Spot a typo? We're always looking to improve this document for the betterment of
 * Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
 * Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
 
-|__Previous:__|__Next:__|
-|:---|---:|
-|[Python Coding Conventions](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md)|[Continuous Integration](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md)|
+|__Previous:__||__Next:__|
+|:---|---|---:|
+|[Python Coding Conventions](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Continuous Integration](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md)|
