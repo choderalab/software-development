@@ -10,7 +10,7 @@ A community-oriented primer on software development best practices for modern co
 * [__Version Control__](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md): Manage changes to your code over time to maintain its integrity
 * [__Python Coding Conventions__](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md): Follow these Python conventions to write extensible code that invites collaboration
 * [__Unit Testing__](https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md): Testing your code to make sure it does what you expect it to
-* [__Continuous Integration__](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md): Setting up continuous integration to ensure new will not break things
+* [__Continuous Integration__](https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md): Setting up continuous integration to ensure new code will not break your software
 * [__Documentation__](https://github.com/choderalab/software-development/blob/master/DOCUMENTATION.md): Documenting your code and its use so others (and future you!) can use it
 * [__Python Optimization__](https://github.com/choderalab/software-development/blob/master/PYTHON_OPTIMIZATION.md): Speeding up your Python code without losing your mind
 * [__Packaging and Deployment__](https://github.com/choderalab/software-development/blob/master/PACKAGING_AND_DEPLOYMENT.md): Package your code and allow others to install it with minimal hassle
@@ -28,6 +28,7 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 * [Gregory Ross](https://github.com/gregoryross) - `<gregory.ross@choderalab.org>`
 * [Levi N. Naden](https://github.com/lnaden) - `<levi.naden@choderalab.org>`
 * [Arien ("Bas") S. Rustenburg](https://github.com/bas-rustenburg) - `<bas.rustenburg@choderalab.org>`
+* [E. A. Rosenzweig](https://github.com/earosenz) - `<erosenzweig@ccny.cuny.edu>`
 
 ## Acknowledgments
 
@@ -55,3 +56,5 @@ You must give appropriate credit, provide a link to the license, and indicate if
 You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 See the full terms of the license [here](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+__Next Chapter:__ [Philosophy and Scope ](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)
