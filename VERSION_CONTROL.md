@@ -3,8 +3,8 @@
 Version control is important for maintaining the integrity of a software project. Tools like `git`, which is now the de facto standard for version control in most places, provide an interactive workflow environment for version control. 
 
 A version control system like git allows
-- Track versions of files
-- Connect and share code between computers using repositories (this is where github comes into the equation)
+- Tracking versions of files
+- Connecting and sharing code between computers using repositories (this is where github comes into the equation)
 - Easy mirroring and branching of code bases
 
 On the user side, it provides a context manager, easily allowing you to switch between different versions of code, known as branches. It also provides a workflow for extending and modifying existing code:
@@ -30,7 +30,6 @@ Below is a basic description of a workflow that uses github.
 https://guides.github.com/introduction/flow/index.html
 
 # Recommendations
-
 
 ## What tool should I use?
 
@@ -64,8 +63,6 @@ Alternatively, on Github, opening a pull-request from a fork is just as easy, an
 
 If you're starting a major project with many developers, you should consider the [git-flow](http://nvie.com/posts/a-successful-git-branching-model/) model. It is probably too much effort for a small project with one or two developers, but it can help to keep a very active large software project organized. It provides strategies for maintaining the code and releasing new versions and bugfixes. 
 
-
-
 # More useful links
 
 The documentation for git:
@@ -83,4 +80,15 @@ https://github.com/pandegroup/openmm
 
 https://github.com/numpy/numpy
 
+## Help Make this Page Better
+
+Want to contribute to this repository? Have a suggestion for an improvement?
+Spot a typo? We're always looking to improve this document for the betterment of all.
+
+* Please feel free to [open a new issue](https://github.com/choderalab/software-development/issues/new) with your feedback and suggestions!
+* Or [make a pull request](https://github.com/choderalab/software-development/compare) from your branch or fork!
+
+|__Previous:__|__Next:__|
+|:---|---:|
+|[Licensing Guidelines](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md)|[Version Control](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md)|
 
