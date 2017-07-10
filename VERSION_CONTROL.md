@@ -90,5 +90,5 @@ Spot a typo? We're always looking to improve this document for the betterment of
 
 |__Previous:__||__Next:__|
 |:---|---|---:|
-|[Licensing Guidelines](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Version Control](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md)|
+|[Licensing Guidelines](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Python Coding Conventions](https://github.com/choderalab/software-development/blob/master/PYTHON_CODING.md)|
 
