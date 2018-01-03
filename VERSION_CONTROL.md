@@ -132,7 +132,7 @@ tight control of the code base.
     * The fork will still know of the original remote repository, but will not commit, pull, or push to it by default
 2. Repeat steps 1 through 5 from the *Branch and Pull Request Model* above
 3. Create a pull request proposing `youruser/exampleproject:awesome_new_feature` be merged into 
-   `researchgroup/exampleproject`, or whatever branch you want
+   `researchgroup/exampleproject:master`, or whatever branch you want
 4. Allow continuous integration tests to run, discuss
 5. Repeat step 2 and 4
 6. Allow the maintainers of `researchgroup/exampleproject` to merge
