@@ -24,6 +24,8 @@ devtools/
 docs/
 examplepackage/
   tests/
+    data/
+      reference_data.csv
     __init__.py
     test_examplepackage.py
   __init__.py
@@ -52,10 +54,11 @@ setup.py
 ```
 
 The root directory should contain the primary `setup.py` file for the `examplepackage`. This is the primary file that 
-users and deployment tools will run to build the package. This is a critical component of any Python package and 
-should always be included.
+users and deployment tools will run to build the package. This is a 
+[critical component of any Python package][setup.py_help] and should always be included.
 
-The `.travis.yml` and `.appveyor.yml` are the config files needed by Travis (Linux/OSX) and AppVeyor (Windows) 
+The [`.travis.yml`][travis_yaml] and [`.appveyor.yml`][appveyor_yaml] are the config files needed by 
+[Travis (Linux/OSX)][travis_main] and [AppVeyor (Windows)][appveyor_main]
 Continuous Integration (CI) tools which are common to many packages on GitHub. These tools help automatically test 
 changes proposed changes, and making sure changes to upstream packages don't break the existing code. We cover CI 
 tools in more detail 
@@ -124,8 +127,9 @@ documentation building. However, every `devtools` directory should have its own 
 rendered on GitHub explaining the content of the directory and how to use the files within.
 This example assumes `conda` deployment with both Travis and AppVeyor CI tools.
 
-The `travis-ci` and `appveyor-ci` folders are arbitrary names, but contain the scripts that the `.travis.yml` and 
-`.appveyor.yml` respectively call to do more complex scripts that are difficult to call with the YAML file each 
+The `travis-ci` and `appveyor-ci` folders are arbitrary names, but contain the scripts that the 
+[`.travis.yml`][travis_yaml] and [`.appveyor.yml`][appveyor_yaml] respectively call to do more complex scripts 
+that are difficult to call with the YAML file each 
 CI tool reads. For instance, installing Miniconda, configuring Visual Studio, downloading external libraries 
 to compile again, or deploying compiled docs to an external server. The directory contents will differ and there 
 are no mandatory file names, but file names should be descriptive.
@@ -139,6 +143,8 @@ further details here.
 ```
 examplepackage/
   tests/
+    data/
+      reference_data.csv
     __init__.py
     test_examplepackage.py
   __init__.py
@@ -153,8 +159,10 @@ show one for this example.
 
 The `tests` directory should be a staple of any package, and more importantly included with the package source code. 
 Tests are just as important as the package itself as it ensures that code functions and gives the CI tools 
-something to run to verify changes do not break something. Please consider 
-[reading our dedicated chapter to unit tests][unit_test_page] for more information.
+something to run to verify changes do not break something. This is also a good directory to put sample or toy data 
+for your code to validate against. Try to keep the total size of these test data small as any new clone of the repo 
+and every CI test must download this data to run.  
+Please consider [reading our dedicated chapter to unit tests][unit_test_page] for more information.
 
 ## Help Make this Page Better
 
@@ -175,3 +183,8 @@ Spot a typo? We're always looking to improve this document for the betterment of
 [gitignore_template]: https://github.com/github/gitignore/blob/master/Python.gitignore
 [documentation_page]: https://github.com/choderalab/software-development/blob/master/DOCUMENTATION.md
 [unit_test_page]: https://github.com/choderalab/software-development/blob/master/UNIT_TESTING.md
+[setup.py_help]: https://docs.python.org/3.6/distutils/setupscript.html
+[travis_yaml]: https://docs.travis-ci.com/user/customizing-the-build/
+[travis_main]: https://docs.travis-ci.com/
+[appveyor_yaml]: https://www.appveyor.com/docs/build-configuration/
+[appveyor_main]: https://www.appveyor.com/
