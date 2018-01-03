@@ -168,7 +168,7 @@ Spot a typo? We're always looking to improve this document for the betterment of
 |:---|---|---:|
 |[Licensing Guidelines](https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Version Control](https://github.com/choderalab/software-development/blob/master/VERSION_CONTROL.md)|
 
-[license_highlight]: https://github.com/choderalab/software-development/blob/master/chapter_images/structure_license_highlight.png "Highlighted license"
+[license_highlight]: https://github.com/choderalab/software-development/raw/master/chapter_images/structure_license_highlight.png "Highlighted license"
 [license_page]: https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md
 [package_deploy_page]: https://github.com/choderalab/software-development/blob/master/LICENSING_GUIDELINES.md
 [CI_page]: https://github.com/choderalab/software-development/blob/master/CONTINUOUS_INTEGRATION.md
