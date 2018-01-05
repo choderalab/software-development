@@ -150,4 +150,4 @@ Spot a typo? We're always looking to improve this document for the betterment of
 
 |__Previous:__||__Next:__|
 |:---|---|---:|
-|[Philosophy and Scope](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Structuring Your Project (Work in Progress)](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md)|
+|[Philosophy and Scope](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)|[Back to Top](https://github.com/choderalab/software-development/blob/master/README.md)|[Structuring Your Project](https://github.com/choderalab/software-development/blob/master/STRUCTURING_YOUR_PROJECT.md)|
