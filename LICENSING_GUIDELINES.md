@@ -14,15 +14,23 @@ It is also important to remember that different licenses may not be compatible w
 **It is also critical to note that having an open source license does not preclude dual licensing, that is, both open source and commercial (with permission).**
 Issuing a second license generally requires the approval of all authors, so can be a complex issue (see Relicensing below).
 
+## The Reproducible Research Standard
+
+In [The Legal Framework for Reproducible Scientific Research](https://ieeexplore.ieee.org/document/4720221/) (PDF available [here](https://web.stanford.edu/~vcs/papers/Legal-STODDEN2009.pdf)), Victoria Stodden introduces the [Reproducible Research Standard](https://web.stanford.edu/~vcs/talks/VictoriaStoddenCommuniaJune2009-2.pdf), a set of recommendations for ensuring that the entire research compendium associated with a computational research product is released in a manner that ensures maximum utility to the research community while ensuring the authors get appropriate credit for their work.
+Notably, the research compendium includes heterogeneous components, such as code, documentation, data, associated manuscripts, and auxiliary material, for which different licenses are appropriate.
+While software licenses such as the [MIT License](http://choosealicense.com/licenses/mit/) are suitable to describe how code can be used, modified, and redistributed, it does not make sense when applied to documentation or data since these are not code.
+
 ## Recommendations
 
-Because the legal issues associated with maintaining a copyleft license while simultaneously allowing full collaborations can become burdensome, we recommend a permissive license such as the [MIT License](http://choosealicense.com/licenses/mit/).
-However, it is important to decide for yourself what priorities you have and what resources you will have available to assist in license management.
+Following the legal guidance of the Reproducible Research Standard, we recommend a permissive license such as the [MIT License](http://choosealicense.com/licenses/mit/) or the [3-Clause BSD License](https://opensource.org/licenses/BSD-3-Clause) for code, and the [Creative Commons By Attribution (CC-BY) 4.0 License](https://creativecommons.org/licenses/by/4.0/) for other components.
+
+## Other Resources
+
+It is important to decide for yourself what priorities you have and what resources you will have available to assist in license management.
 Below, we provide a brief overview of several useful licensing options for scientific software.
-
-## Preliminary Resources
-
-For an overview of various licenses for scientific programmers, [this article](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598) can be useful. For a comparison of many different licenses, we have found [this table](http://choosealicense.com/appendix/) very useful. Some brief descriptions of common licenses are provided below. Finally, the Open Source Initiative (OSI), which is widely trusted to define "open source," can be found [here](https://opensource.org/); its definition of permissible open source licenses is used by many granting agencies (e.g., [the NSF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1565146)).
+For an overview of various software licenses aimed at the scientific programmer, [this article](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598) can be useful.
+For a comparison of many different licenses, we have found [this table](http://choosealicense.com/appendix/) very useful.
+Finally, the Open Source Initiative (OSI), which is widely trusted to define "open source," can be found [here](https://opensource.org/); its definition of open source licenses is used by many granting agencies (e.g., [the NSF](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1565146)) to define which licenses are permissible under the terms of the grant.
 
 ## Permissive Licenses
 
