@@ -33,7 +33,7 @@ While this is changing with wider support for Python wheels (see [PEP 427](https
 #### Distributing your code with PyPI
 
 If you have a pure Python package you would like to upload to PyPI and have already structured it to be installable by a `setup.py` that makes use of [`distutils`](https://docs.python.org/3/library/distutils.html), uploading your package is very easy.
-This [tutorial](http://peterdowns.com/posts/first-time-with-pypi.html) provides a gentle introduction to the whole process, but once everything is structured correctly, uploading is as simple as:
+This [tutorial](https://packaging.python.org/tutorials/packaging-projects/) provides a gentle introduction to the whole process, but once everything is structured correctly, uploading is as simple as:
 ```bash
 python setup.py register -r pypi
 python setup.py sdist upload -r pypi
