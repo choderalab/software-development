@@ -85,7 +85,7 @@ It is also an optimizing compiler that first converts the Cython into C, and the
 To install, if you have Anaconda (see above if you don't), it's just `conda install cython`
 
 Cython is also a straightforward way to connect Python code to C code, as Cython can both be readily imported by Python, and can readily access C libraries.
-As with Numba, it can require some finesse to ensure that the Cython code you write does not need to call the intepreter very often. To judge this, one can simply use
+As with Numba, it can require some finesse to ensure that the Cython code you write does not need to call the interpreter very often. To judge this, one can simply use
 ```bash
 cython -a my_code.pyx
 ```
