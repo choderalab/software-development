@@ -90,11 +90,11 @@ If you're starting a major project with many developers, you should consider the
 for a small project with one or two developers, but it can help to keep a very active large software project 
 organized. It provides strategies for maintaining the code and releasing new versions and bugfixes. 
 
-### Example Workflow: GitHub Flow "Branch and Pull Request" OR "Fork and Pull Rquest"
+### Example Workflow: GitHub Flow "Branch and Pull Request" OR "Fork and Pull Request"
 
 This is an example work flow which will often be encountered on GitHub. There are two approaches here: 
 "Branch and Pull Request" 
-and "Fork and Pull Rquest." Both methods are very similar and differ mainly in level of repository access. 
+and "Fork and Pull Request." Both methods are very similar and differ mainly in level of repository access. 
 This example follows 
 from the [GitHub Flow introduction](https://guides.github.com/introduction/flow/) which has interactive images. 
 These two methods are not exclusive from one another and can work simultaneously with each other.

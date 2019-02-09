@@ -67,7 +67,7 @@ Logs of builds are kept for an extended length of time on Travis which can be co
 
 [AppVeyor](https://www.appveyor.com/) is a platform very similar to Travis, but it works for Windows builds instead. If you want your code to run on Windows, we highly recommend using this program.
 
-Integration is avalable through the [GitHub Page](https://github.com/integrations/appveyor)
+Integration is available through the [GitHub Page](https://github.com/integrations/appveyor)
 
 ### CircleCI
 
@@ -114,7 +114,7 @@ This file is a good bare-bones script to get you up and running on CI. It simply
     * Try different ones out, see what works for you and your code
 1. Start experimenting with CI and settings
     * Don't be afraid to break something in the CI script! All the suggestions here are isolated environments that are spun up and shut down on demand
-    * **Disclaimer**: Scripts you write which actually push to or interact with a live server will still run no matter where they're run from. It's up to your judgement if you want those as part of your CI platform.
+    * **Disclaimer**: Scripts you write which actually push to or interact with a live server will still run no matter where they're run from. It's up to your judgment if you want those as part of your CI platform.
 1. Start reading the docs for your CI platform
     * The examples here don't even begin to scratch the surface of all the settings you could use
     * Remember that you don't necessarily need all these options to make a good CI environment
