@@ -64,7 +64,7 @@ changes proposed changes, and making sure changes to upstream packages don't bre
 tools in more detail 
 [in a later chapter][CI_page].
 If a package is not deployed on a specific OS, or runs a different CI tool, these specific files may not be present, 
-but some type of CI should be included so the developer does not need to manually run the tests themsvels.
+but some type of CI should be included so the developer does not need to manually run the tests themselves.
 
 The final three files, `LICENSE.md`, `README.md` and `.gitignore` are Git and GitHub specific files which should 
 always be included. The `LICENSE.md` file is a direct copy of the 
@@ -134,7 +134,7 @@ CI tool reads. For instance, installing Miniconda, configuring Visual Studio, do
 to compile again, or deploying compiled docs to an external server. The directory contents will differ and there 
 are no mandatory file names, but file names should be descriptive.
 
-The `conda-recpie` directory is also an arbitrary name, but contains the files needed to do a `conda` deployment 
+The `conda-recipe` directory is also an arbitrary name, but contains the files needed to do a `conda` deployment 
 on the operating systems. We have [an entire chapter for deployment][package_deploy_page] and will not go into 
 further details here.
 

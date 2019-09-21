@@ -122,7 +122,7 @@ While the GPL and LGPL are intended to ensure that users of code can access the 
 ### Dual license
 
 What if you like the idea of the GPL, but also have commercial partners interested in your code but not the GPL? Or what if your scientific collaborators have written incompatible code?
-It is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project distributes a binary of a modified version of [gromacs](http://gromacs.org) that includes cryptographic code to prevent tampering or altering scientific results on donor machines; while gromacs is a GPL-licensed software package, Folding@Home has [obtained a special license](https://foldingathome.stanford.edu/support/faq/opensource/) from the gromacs developers for this purpose.
+It is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project distributes a binary of a modified version of [GROMACS](http://gromacs.org) that includes cryptographic code to prevent tampering or altering scientific results on donor machines; Folding@Home [obtained a special license](https://foldingathome.stanford.edu/support/faq/opensource/) from the GROMACS developers for this purpose, even though GROMACS was then a GPL-licensed software package (and now LGPL-licensed).
 
 ### Changing the license
 
