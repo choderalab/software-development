@@ -68,6 +68,7 @@ See the full terms of the license [here](https://creativecommons.org/licenses/by
 
 Be sure to check out these related guides and materials:
 * [MolSSI Software Best Practices](https://molssi.org/education/best-practices/)
+* [MolSSI Education resources](https://molssi-education.github.io/resources.html)
 * [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 
 __Next Chapter:__ [Philosophy and Scope ](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)
