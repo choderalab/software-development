@@ -1,9 +1,11 @@
 # Licensing Guidelines
 
 When starting a new software project, there are many questions, from goals and milestones to implementation details.
-A critical detail is often glossed over: the license terms. While it may seem like a nightmare fit only for a lawyer,
-there are several open source licenses that are easy to understand and widely used by the community. To describe them, we'll separate
-licenses into two categories:
+A critical detail is often glossed over: the license terms.
+Explicitly specifying a license that gives your users permission to use, modify, and distribute your work is an important part of the process of reproducible science;
+without explicitly specifying a license that describes how your work may be used, you may inadvertently greatly limit the impact of your work because copyright and related law restricts how others can use it.
+While licenses may see to be complex (and boring) legal documents, fortunately, several open source licenses are both widely used by the community and easy to understand.
+To describe them, we'll separate licenses into two categories:
 
 * [__Permissive__](https://en.wikipedia.org/wiki/Permissive_software_licence): Places no restriction on the use of the code in derivative works, including commercialization. Often only requires citation.
 
@@ -11,7 +13,7 @@ licenses into two categories:
 
 It is also important to remember that different licenses may not be compatible with each other. For instance, if you use a "copyleft" licensed codebase to develop your codebase, you may not be able to use a permissive license. See below for further discussion of this issue.
 
-**It is also critical to note that having an open source license does not preclude dual licensing, that is, both open source and commercial (with permission).**
+**It is also critical to note that having an open source license does not preclude dual licensing, allowing authors to distribute the code under different licenses to different parties.**
 Issuing a second license generally requires the approval of all authors, so can be a complex issue (see Relicensing below).
 
 ## The Reproducible Research Standard
@@ -126,7 +128,8 @@ It is important to recall that as the developer, you may re-license the code to 
 
 ### Changing the license
 
-Sometimes, over the course of a project, the developers may decide that the original license is no longer appropriate. The license can be changed, though, with the consent of the copyright holders. For a list of examples, [the Wikipedia page](https://en.wikipedia.org/wiki/Software_relicensing) is helpful.
+Sometimes, over the course of a project, the developers may decide that the original license is no longer appropriate. The license can be changed with the consent of all copyright holders.
+For a list of examples, [the Wikipedia page](https://en.wikipedia.org/wiki/Software_relicensing) is helpful.
 
 ### Getting the team on board
 
@@ -135,9 +138,9 @@ In a project with many developers, it can become burdensome to modify the licens
 * Permissive licenses such as MIT generally would allow any developer (indeed, anyone) to use the code as she sees fit, thus obviating the legal problem (though not the social one)
 * If you're using a copyleft license, but, for instance, want to also offer a commercial license, having developers sign a _Contributor agreement_ can specify when and how these changes can take place.
 
-### Contributor agreement
+### Contributor Agreement
 
-So, what's a contributor agreement?
+Because the consent of all authors is generally needed to issue new licenses, having contributors to your code execute a _Contributor Agreement_ can help ensure that it's easy to issue additional licenses for the code when needed.
 
 From the OSI FAQ:
 >Many open source projects will only accept patches (code contributions or documentation contributions) from people who have submitted a legal document known as a contributor agreement. Contributor agreements are not open source licenses — rather, they are a way for the contributor to tell the project that it has the right to distribute the new contributions under the project's existing open source license. (Some contributor agreements also allow for the project to distribute the contributions under other open source licenses too, which enables projects to change their license in the future, and some agreements even allow the project to distribute the contributions under any license the project wants.)
