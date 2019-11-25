@@ -58,13 +58,15 @@ chemistry, providing pointers for those who wish to read about certain topics in
 
 ## Instant Skeletal Package from a Cookiecutter
 
-The [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) provides a Computational Molecular Sciences [CMS Cookiecutter](https://github.com/MolSSI/cookiecutter-cms) ([docs](http://cookiecutter.readthedocs.io))
+The [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) provides a Computational Molecular Sciences (CMS) [cookiecutter](https://github.com/MolSSI/cookiecutter-cms)
 for users who want to have an automated fresh Python package created for them which follows the recommendations
-presented in this guide. We highly encourage people to start from this cookiecutter as it automatically creates
+presented in this guide.
+A [cookiecutter](http://cookiecutter.readthedocs.io) template provides an automated way to set up files and directories inside a GitHub repository tailored to the application of interest in a manner that already has working functionality, making it easy for the developer to dive in and start coding while adhering to best practices.
+We highly encourage people to start from this cookiecutter as it automatically creates
 the [structure], files for [continuous integration], [documentation], [distribution], [version control],
-[licensing], and others.
+[licensing], and others, saving 30-60 minutes of work!
 
-The cookiecutter and its two-line installation instructions can be found at:
+The MolSSI CMS Cookiecutter and its two-line installation instructions can be found at:
 
 **[Computational Chemistry Cookiecutter](https://github.com/MolSSI/cookiecutter-cms)**
 
