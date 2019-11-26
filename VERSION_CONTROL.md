@@ -139,20 +139,19 @@ This prevents accidents that could lead to broken code in `master`.
 
 # More useful links
 
-The documentation for git:
+The documentation for `git`:
 
 https://git-scm.com/
 
-A good guide on using git:
+A good guide on using `git`:
 
 https://www.atlassian.com/git/
 
 
-Some example projects on GitHub that are actively developed:
+Some good example projects on GitHub that are actively developed:
 
-https://github.com/pandegroup/openmm
-
-https://github.com/numpy/numpy
+* **OpenMM**: https://github.com/openmm/openmm
+* **numpy**: https://github.com/numpy/numpy
 
 ## Help Make this Page Better
 
