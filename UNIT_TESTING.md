@@ -1,18 +1,21 @@
 # Unit testing
 
 ## What are unit tests?
+
 * [Unit tests](https://en.wikipedia.org/wiki/Unit_testing) are designed to test a specific functionality of code
 * They are used by the programmer to make sure the code is doing what it's supposed to be doing
 * A unit test could, for example, verify the behavior of a single function in a class or module
 * Unit tests compare the output of a piece of code with expected output to determine whether the test should pass or fail
 
 ## Why create unit tests?
+
 * They tell us whether the code in question is working as expected
 * They help to catch bugs
 * They provide basic guaranties that code is minimally trustworthy
 * They help ensure new commits don't break the functionality of the code
 
 ### Unit tests versus integration tests
+
 Unit tests verify whether a piece of code---or _unit_ of code---is working correctly, whereas an [integration test](https://en.wikipedia.org/wiki/Integration_testing) ensures that
 different pieces of code work together correctly as whole, i.e., that different pieces of code are well _integrated_.
 

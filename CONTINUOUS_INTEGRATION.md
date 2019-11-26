@@ -1,4 +1,4 @@
-# Continuous Integration 
+# Continuous Integration
 
 Continuous integration (CI) is the process of methodically merging and testing code from multiple sources in an effort to ensure that all the pieces of a project work well with each other. In practice, CI is typically an automated process which checks newly proposed code from a developer against existing code to ensure the changes do not break what is already in place.
 
@@ -23,7 +23,7 @@ Let us cover each of these items in detail.
 
 CI processes should not involve developer input to execute and run. Once the initial build is set up, CI should act in a way that does not require a developer to manually queue up a check, and/or have to issue individual commands to ensure functionality. Of course, you could allow a developer to queue up a manual job as a debugger, but that should not be the default operating procedure.
 
-### Scheduled and triggered actions
+### Scheduled and triggered actions (e.g. nightly builds)
 
 The events which cause a CI process to run should be both time-based and developer-action-based. Having both of these events helps reduce errors introduced by developers of your code, and by developers of external code.
 
