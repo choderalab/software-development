@@ -134,10 +134,7 @@ tight control of the code base.
 
 ### Protect your `master` branch
 
-Regardless of your model, to prevent accidental pushes to the `master` branch which may
-inadvertently break things prior to automated testing in PRs, it is highly recommended
-you protect your `master` branch:
-https://help.github.com/en/github/administering-a-repository/configuring-protected-branches
+Regardless of your model, to prevent accidental pushes to the `master` branch which may inadvertently break things prior to automated testing in PRs, it is highly recommended you [protect your `master` branch from direct push commits](https://help.github.com/en/github/administering-a-repository/configuring-protected-branches).
 This prevents accidents that could lead to broken code in `master`.
 
 # More useful links
