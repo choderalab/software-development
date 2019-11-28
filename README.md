@@ -33,14 +33,21 @@ Please feel free to comment on the [issue tracker](https://github.com/choderalab
 ## Acknowledgments
 
 We're grateful to the contributions of many people who helped define much of these software development practices:
-* Robert McGibbon
-* Jason Swails
-* Matthew Harrigan
-* Kyle A. Beauchamp
-* Jan-Hendrk Prinz
-* David W. Swenson
-* Martin K. Scherer
-* Frank Noe
+* [Patrick Grinaway](https://github.com/pgrinaway)
+* [Ariën S. ("Bas") Rustenburg](https://github.com/bas-rustenburg)
+* [Andrea Rizzi](https://github.com/andrrizzi)
+* [Levi N. Naden](https://github.com/lnaden)
+* [Daniel Smith](https://github.com/dgasmith)
+* [Jeffrey Wagner](https://github.com/j-wags)
+* [Robert McGibbon](https://github.com/rmcgibbo)
+* [Jason Swails](https://github.com/swails)
+* [Matthew Harrigan](https://github.com/mpharrigan)
+* [Kyle A. Beauchamp](https://github.com/kyleabeauchamp)
+* [Jan-Hendrk Prinz](https://github.com/dwhswenson)
+* [David W. Swenson](https://github.com/jhprinz)
+* [Martin K. Scherer](https://github.com/marscher)
+* [Antonia S. J. S. Mey](https://github.com/ppxasjsm)
+* [Frank Noe](https://github.com/franknoe)
 
 ## License
 
@@ -56,5 +63,12 @@ You must give appropriate credit, provide a link to the license, and indicate if
 You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 
 See the full terms of the license [here](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+## Related Guides
+
+Be sure to check out these related guides and materials:
+* [MolSSI Software Best Practices](https://molssi.org/education/best-practices/)
+* [MolSSI Education resources](https://molssi-education.github.io/resources.html)
+* [Software Sustainability Institute Guides](https://software.ac.uk/resources/guides)
 
 __Next Chapter:__ [Philosophy and Scope ](https://github.com/choderalab/software-development/blob/master/PHILOSOPHY_AND_SCOPE.md)
