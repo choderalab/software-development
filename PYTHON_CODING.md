@@ -37,6 +37,10 @@ The document is not the most exciting read, but the good news is __you don't hav
 PyCharm has this feature enabled by default.
 For Atom, simply install the [linter-pep8](https://atom.io/packages/search?q=pep8) package.
 
+[Black](https://github.com/psf/black) is the uncompromising Python code formatter. It formats your code so as to comply with most of pep8 requirements except the fact it does not help you with naming convention. In a team context, it enforces a common and pep8 compliant coding styles.
+
+[iSort](https://github.com/PyCQA/isort) a Python utility / library to sort imports alphabetically, and automatically separated into sections and by type. It makes your import section tidy, reasonable and readable. In a team context, it makes code review easier. Because there is a single right place for your new import statement, when two people do the same imports in different location in a source file, iSort will deduplicate it.
+
 ### The most useful PEP8 guidelines
 
 #### Know when *not* to adhere to PEP8
