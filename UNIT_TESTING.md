@@ -86,7 +86,7 @@ Once you have the tests automated, you can also enable [continuous integration](
 
 ## Advanced topics
 * Testing code with stochastic outcomes
-* Evaluating test coverage with tools like [coveralls](https://coveralls.io/)
+* Evaluating test coverage with tools like [codecov](https://codecov.io/) and [coveralls](https://coveralls.io/)
 * [Test-driven development](https://en.wikipedia.org/wiki/Test-driven_development)
 
 ## Help Make this Page Better
