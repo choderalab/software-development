@@ -56,20 +56,6 @@ computational chemistry software to adhere to some common guidelines for the fol
 We intend to cover only the most important aspects of the critical components of software development for computational
 chemistry, providing pointers for those who wish to read about certain topics in more depth.
 
-## Instant Skeletal Package from a Cookiecutter
-
-The [Molecular Sciences Software Institute (MolSSI)](http://molssi.org) provides a Computational Molecular Sciences (CMS) [cookiecutter](https://github.com/MolSSI/cookiecutter-cms)
-for users who want to have an automated fresh Python package created for them which follows the recommendations
-presented in this guide.
-A [cookiecutter](http://cookiecutter.readthedocs.io) template provides an automated way to set up files and directories inside a git repository tailored to the application of interest in a manner that already has working functionality, making it easy for the developer to dive in and start coding while adhering to best practices.
-We highly encourage people to start from this cookiecutter as it automatically creates
-the [structure], files for [continuous integration], [documentation], [distribution], [version control],
-[licensing], and others, saving 30-60 minutes of work!
-
-The MolSSI CMS Cookiecutter and its two-line installation instructions can be found at:
-
-**[Computational Chemistry Cookiecutter](https://github.com/MolSSI/cookiecutter-cms)**
-
 ## Help Make this Page Better
 
 Want to contribute to this repository? Have a suggestion for an improvement?
