@@ -13,7 +13,7 @@ pip install cookiecutter
 cookiecutter gh:molssi/cookiecutter-cms
 ```
 You can then answer the questions posed to create a new project that will automatically
-be checked into a new local git repo, and is ready to be pushed to [GitHub](http://github.com).
+be checked into a new local git repo, and it is then ready to be pushed to [GitHub](http://github.com).
 
 Below, we review the basic philosophy behind how the [CMS Cookiecutter](https://github.com/MolSSI/cookiecutter-cms)
 structures a new repository and why.
@@ -54,7 +54,7 @@ setup.py
 ```
 
 This list may appear daunting at first, but each element is either a critical component of what will make the software
-easy to access, and easy to maintain. The following sections will break down each element in the skeleton and explain
+easy to access and maintain. The following sections will break down each element in the skeleton and explain
 why they are helpful. Your package may not need *every* element of this skeleton, but should include many of them.
 
 ## The root directory: Primary setup file, CI control, and Git(Hub) Helpers  
@@ -93,7 +93,7 @@ The `README.md` file is the *most important file* for a GitHub project. A Markdo
 by GitHub on the project's homepage. That means this is the **FIRST** thing users see when visiting `exampleproject`,
 so this should be an informative file which tells users the following:
 1. Short explanation of what the project does
-1. Quick "How-To install and run" the project. This should be only a few lines, which is why its important to
+1. Quick "How-To install and run" the project. This should be only a few lines, which is why it's important to
    ensure the project can be installed easily.
    * This topic is covered [in a later chapter][package_deploy_page], but its important to plan for this section now
 1. Who the authors of the package are

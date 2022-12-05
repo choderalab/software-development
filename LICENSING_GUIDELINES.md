@@ -4,7 +4,7 @@ When starting a new software project, there are many questions, from goals and m
 A critical detail is often glossed over: the license terms.
 Explicitly specifying a license that gives your users permission to use, modify, and distribute your work is an important part of the process of reproducible science;
 without explicitly specifying a license that describes how your work may be used, you may inadvertently greatly limit the impact of your work because copyright and related law restricts how others can use it.
-While licenses may see to be complex (and boring) legal documents, fortunately, several open source licenses are both widely used by the community and easy to understand.
+While licenses may seem to be complex (and boring) legal documents, fortunately, several open source licenses are both widely used by the community and easy to understand.
 To describe them, we'll separate licenses into two categories:
 
 * [__Permissive__](https://en.wikipedia.org/wiki/Permissive_software_licence): Places no restriction on the use of the code in derivative works, including commercialization. Often only requires citation.
@@ -101,7 +101,7 @@ While incentivizing further open source development indeed is a worthy goal, it 
 
 ### GPL
 
-Possibly one of the most well-known copyleft licenses, the GPL, or GNU General Public License, places strong conditions on developers of derivative works. Derivative works must not only be open-source, but must also carry the a compatible license, giving it a "viral" property. So, why would you use this license? If you want to make sure that useful derivatives of your work are freely available to other developers, this may be an appropriate license.
+Possibly one of the most well-known copyleft licenses, the GPL, or GNU General Public License, places strong conditions on developers of derivative works. Derivative works must not only be open-source, but must also carry a compatible license, giving it a "viral" property. So, why would you use this license? If you want to make sure that useful derivatives of your work are freely available to other developers, this may be an appropriate license.
 
 As the GPL is quite lengthy, we have not reproduced it here, but you may find a fuller description [on this page](http://choosealicense.com/licenses/gpl-3.0/)
 
@@ -124,7 +124,7 @@ While the GPL and LGPL are intended to ensure that users of code can access the 
 ### Dual license
 
 What if you like the idea of the GPL, but also have commercial partners interested in your code but not the GPL? Or what if your scientific collaborators have written incompatible code?
-It is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project distributes a binary of a modified version of [GROMACS](http://gromacs.org) that includes cryptographic code to prevent tampering or altering scientific results on donor machines; Folding@Home [obtained a special license](https://foldingathome.stanford.edu/support/faq/opensource/) from the GROMACS developers for this purpose, even though GROMACS was then a GPL-licensed software package (and now LGPL-licensed).
+It is important to recall that as the developer, you may re-license the code to a group without these restrictions. For a scientific example, the Folding@Home project distributes a binary of a modified version of [GROMACS](http://gromacs.org) that includes cryptographic code to prevent tampering or altering scientific results on donor machines; Folding@Home [obtained a special license](https://foldingathome.org/support/faq/opensource) from the GROMACS developers for this purpose, even though GROMACS was then a GPL-licensed software package (and now LGPL-licensed).
 
 ### Changing the license
 
