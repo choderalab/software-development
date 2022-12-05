@@ -42,7 +42,7 @@ If you create your project using the [MolSSI CMS Cookiecutter](https://github.co
 
 ### For existing projects
 
-You may already have a codebases that uses a different version control system.
+You may already have a codebases that use a different version control system.
 A very popular version control software is Subversion (`svn`).
 It may be worth investing the effort to switch to `git`.
 While `git` has a slightly steeper learning curve, you may find the features it offers worth it.
@@ -65,7 +65,7 @@ People also often consider Mercurial to be easier to learn.
 
 Unless you have good reason not to, use [GitHub](http://github.com).  
 GitHub makes collaboration on code very easy, and for small groups it offers unlimited private repositories (should you need them; we don't recommend using private repos unless it's absolutely essential to protect data of collaborators).
-At the same time, it allows you to publish and share your completed projects with the open source community, to increase the impact of your code, and allow for contributions from the community.
+At the same time, it allows you to publish and share your completed projects with the open source community, increase the impact of your code, and allow for contributions from the community.
 There are many integrations for GitHub that allow you to automatically test your code, assess the code quality, and host documentation, which makes the development even easier.
 Recently, [GitHub Actions](https://github.com/features/actions) have been added to make this even easier.
 
@@ -78,7 +78,7 @@ opened to discuss the merge with the main branch of the repository. This is a gr
 of the code for projects that have few developers, and a small codebase.
 
 Alternatively, on GitHub, opening a pull-request from a fork is just as easy, and it is the preferred way of having
-outside collaborators contribute to the codebase. This helps keeping the main code separate, while allowing other
+outside collaborators contribute to the codebase. This helps keep the main code separate, while allowing other
 developers to experiment. Even within the same company or group, you may find that using forks lowers the barrier
 for development. It is a workflow worth considering.
 
@@ -102,9 +102,9 @@ are built against.
 This is a model which is good for a small number of developers which all have write access to the repository.
 This is also the recommended model for your own projects to mitigate possible damage to the `master` branch, which can be very hard to fix.
 
-1. Create a new branch on your local copy, lets call it `awesome_new_feature`
+1. Create a new branch on your local copy, let's call it `awesome_new_feature`
 2. Make your changes to the code
-    * *Pitfall Warning:* You can make changes before switching branches, but this often leads you to committing directly
+    * *Pitfall Warning:* You can make changes before switching branches, but this often leads you to commit directly
       to master, which is difficult to fix
 3. Commit your changes
 4. Test locally, repeat previous two steps as needed
@@ -119,7 +119,7 @@ This is also the recommended model for your own projects to mitigate possible da
 
 This example is slightly different than the previous model and is better for repositories with many possible
 contributors without write access to the repository, such as users who want to propose bug fixes or features. The
-limited write access, but accepted pull requests from forks encourages user contribution while still retaining
+limited write access, but accepted pull requests from forks encourage user contribution while still retaining
 tight control of the code base.
 
 1. [Fork a repository][github_fork] into your personal account
